@@ -13,4 +13,4 @@ SYMBOL VALUE
 
 Symbols are expected to be in upper case, interleaved with the values, as upper case hex with no numeric base markers.  Other symbol table formats could be added with minimal effort.
 
-
+The present script emits symbolic labels and values grabbed from each of the input files but does not, at this time, have a text field to document the purpose of the label (TODO)
