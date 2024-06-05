@@ -5,11 +5,12 @@ There have been lists and lists of common ROM entry points and zero page locatio
 Provided here is a Perl script to slurp up these listing files and extract all the symbols, and emit them in formatted columns of numbers that are easy to grep and could easily be imported into spreadsheets or tables in any markdown language.  Also provided are a couple of examples of the output that I have found to be useful.
 
 The input data is any listing file produced by cbm6502asm.  The important formatting is that symbols are emitted on lines beginning with a space, and any line that doesn't start with a space will be discarded here.  A line of acceptable symbols looks like this:
-
+```
 SYMBOL VALUE
  ABS      DB64    ADDEND   0025    ADDFRS   C2D0    ADDIND   D1FC
  ADDON    C803    ADDPR2   0002    ADDPR4   0004    ADDPR8   0008
  ADDPRC   0001    AFFRTS   C550    ANDMSK   0046    ANDOP    CECB
+```
 
 Symbols are expected to be in upper case, interleaved with the values, as upper case hex with no numeric base markers.  Other symbol table formats could be added with minimal effort.
 
