@@ -1,1 +1,95 @@
-../cbmsrc/build/r.pl
+#!/usr/bin/perl
+
+# Read in raw assembler symbol tables and emit a concordance
+
+# Usage: mkmmap COL1,file1 COL2,file2...
+
+$debug = 0;    # flag for printing debugging info to stderr
+%tables = ();  # hash of hashes of symbol/address key/value pairs
+%seen = ();    # hash of all symbols ever seen across all files
+@uniq = ();    # list of uniq symbol names to determine final output
+
+# loop over each file given as args
+foreach $listing (@ARGV) {
+
+	# Extract column name and listing file from each argument
+	($colname,$symbfile) = split(/,/, $listing);
+
+	print stderr "Populating '${colname}' with contents of '$symbfile'\n" if $debug;
+
+	# Read in the listing file and strip it down to symbol/address key/value pairs then save in the hash of hashes
+	my @tmp = slurp($colname,$symbfile);
+	%{$tables{$colname}} = @tmp;
+
+	# remember each symbol we've seen in one common repository for final output
+	foreach $item (keys %{$tables{$colname}}) {
+		$seen{$item}++;
+	}
+}
+
+# take list of all unique symbol names across all input files
+@uniq = sort keys %seen;
+
+# extract name of column headers from list of args
+my (@headers) = map { (split(/,/, $_))[0] } @ARGV;
+
+#
+# output format:
+#
+# LABEL     BASIC1  BASIC3  BASIC4  VIC-20  C64
+# RETURN    $C7CA   $C7DA   $B85D   $C8D2   $A8D2
+# RES00      ----    ----   $C7DE    ----    ----
+# NGONE      ----    ----    ----   $C7E4   $A7E4
+#
+
+# print header line
+
+print("LABEL     ");
+foreach $item (@headers) {
+	printf("%-8s", $item);
+}
+print"\n";
+
+# print body
+
+foreach $label (@uniq) {
+
+	# print label first
+	@line = sprintf("%-7s", $label);
+
+	# print each value or filler if this column doesn't have a value for this label
+	foreach $target (@headers) {
+		my $tval = " ----";
+		$tval = '$' . $tables{$target}{$label} if defined $tables{$target}{$label};
+		push @line, $tval;
+	}
+	print join('   ', @line), "\n";
+}
+
+
+# Slurp up one file and return all symbols found as a list of key/value pairs
+sub slurp()
+{
+	my ($tag,$fname) = @_;
+	my @symbols = ();
+
+	print stderr "Processing '${fname}' into column '${tag}'\n" if $debug;
+
+	# open the file (or else)
+	open(FH, '<', ${fname}) or die $!;
+
+	# read the file line by line and skip lines that do not start with a space
+	foreach (<FH>) {
+
+		next unless /^\s/; # Skip lines that won't have symbols on them
+
+		s/^\s+//; # trim leading whitespace
+
+		# add each symbol and address pair to the list
+		push(@symbols, split(/\s+/));
+
+	}
+	close(FH);
+
+	return @symbols;
+}
