@@ -1,6 +1,9 @@
 #!/usr/bin/perl
 
 # Read in raw assembler symbol tables and emit a concordance
+#
+# Ethan Dicks, 5-Jun-2024
+#
 
 # Usage: mkmmap COL1,file1 COL2,file2...
 
