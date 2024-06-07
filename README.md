@@ -33,7 +33,7 @@ $ cat BASIC_PET_V4_REC.lst KERNAL_PET_4.0_REC.lst >PET4.txt
 Then to produce a memory map of all three versions and to sort the symbols in preference of BASIC 4.0, then Original BASIC, then Upgrade BASIC:
 
 ```
-./mkmmap 1.0,listings/PET1.txt 2.0,listings/PET2.txt 4.0,listings/PET4.txt | (sed -u 1q; sort -k4,4 -k2,2 -k3,3)
+./mkmmap 1.0,PET1.txt 2.0,PET2.txt 4.0,PET4.txt | (sed -u 1q; sort -k4,4 -k2,2 -k3,3)
 ```
 
 (the sed command pulls out the header line prior to sorting)
