@@ -18,7 +18,7 @@ The present script emits symbolic labels and values grabbed from each of the inp
 
 ## Usage:
 
-```./mkmap HDR1,file1.txt HDR2,file2.txt...```
+```./mkmmap HDR1,file1.txt HDR2,file2.txt...```
 
 A more comprehensive example:
 
