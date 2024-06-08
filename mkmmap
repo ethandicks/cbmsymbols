@@ -12,6 +12,9 @@ $debug = 0;    # flag for printing debugging info to stderr
 %seen = ();    # hash of all symbols ever seen across all files
 @uniq = ();    # list of uniq symbol names to determine final output
 
+$f_addr_first = 1;    # flag: symbol first or addresses first
+$hex_prefix   = '$';  # prefix char for hex numbers
+
 # loop over each file given as args
 foreach $listing (@ARGV) {
 
@@ -33,8 +36,17 @@ foreach $listing (@ARGV) {
 # take list of all unique symbol names across all input files
 @uniq = sort keys %seen;
 
+# build header array
+my @headers = ();
+
+# label first if it goes first
+push @headers, "LABEL      " if $f_addr_first;
+
 # extract name of column headers from list of args
-my (@headers) = map { (split(/,/, $_))[0] } @ARGV;
+push @headers, map { (split(/,/, $_))[0] } @ARGV;
+
+# label after values if labels not first
+push @headers, "LABEL      " unless $f_addr_first;
 
 #
 # output format:
@@ -47,7 +59,6 @@ my (@headers) = map { (split(/,/, $_))[0] } @ARGV;
 
 # print header line
 
-print("LABEL     ");
 foreach $item (@headers) {
 	printf("%-8s", $item);
 }
@@ -57,15 +68,23 @@ print"\n";
 
 foreach $label (@uniq) {
 
-	# print label first
-	@line = sprintf("%-7s", $label);
+	# clear line list
+	@line = ();
+
+	# print label first if it goes first
+	push @line, sprintf("%-7s", $label) if $f_addr_first;
 
 	# print each value or filler if this column doesn't have a value for this label
 	foreach $target (@headers) {
+		next if $target =~ /^LABEL/;
 		my $tval = " ----";
-		$tval = '$' . $tables{$target}{$label} if defined $tables{$target}{$label};
+		$tval = $hex_prefix . $tables{$target}{$label} if defined $tables{$target}{$label};
 		push @line, $tval;
 	}
+
+	# print label after values if it goes after values
+	push @line, sprintf("%-7s", $label) unless $f_addr_first;
+
 	print join('   ', @line), "\n";
 }
 
