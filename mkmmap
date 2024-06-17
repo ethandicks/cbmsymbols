@@ -135,7 +135,7 @@ sub slurp()
 		if ($tag =~ /^DESC/ or $tag =~ /^COMM/) {
 			chomp;
 			s/,\s+/,/; # trim leading whitespace from description field
-			push(@symbols, split(/,/));
+			push(@symbols, split(/,/, $_, 2));
 		} else {
 			next unless /^\s/; # Skip lines that won't have symbols on them
 
