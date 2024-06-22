@@ -1,0 +1,1949 @@
+ARYSTR, x
+ARYVAR, x
+BCI1, x
+BCI2, x
+BSYI1, x
+CKEOL, x
+CLRPOS, x
+CNTWFL, x
+DSPP1, x
+DVAR, x
+DVAR2, x
+DVAR3, x
+DVARS, x
+ERRGO1, x
+FCERR1, x
+FNDVAR, x
+FRETRT, x
+GRBPAS, x
+GRBRTS, x
+INCRTS, x
+INIT20, x
+INLINN, x
+KBASIN, x
+KBSOUT, x
+KUDTIM, x
+L00, x
+L02, x
+L026A, x
+LC9D8, x
+LCA5A, x
+LCA64, x
+LCE3B, x
+LCE69, x
+LD657, x
+LE082, x
+LE1AA, x
+LE1C9, x
+LE1CE, x
+LE1D8, x
+LE1F0, x
+LE241, x
+LE273, x
+LE275, x
+LE6AC, x
+LE6AD, x
+LE73F, x
+LE7F3, x
+LF253, x
+LF2EA, x
+LF304, x
+LF3CC, x
+LF53B, x
+LF5E3, x
+LF5E7, x
+LF71C, x
+LF720, x
+LF724, x
+LF735, x
+LF9CA, x
+LFD48, x
+LFD4E, x
+LFD54, x
+LFD65, x
+LFD6D, x
+LFD9B, x
+LFDB3, x
+LFE0D, x
+LFE18, x
+LFE2A, x
+LFE2D, x
+LFE44, x
+LFE51, x
+LFEAE, x
+LFEB3, x
+LFEB8, x
+LFEC3, x
+LFEC5, x
+LFECA, x
+LFECF, x
+LFED9, x
+LFEE1, x
+LFEE6, x
+LFEEB, x
+LFEF0, x
+LFEFF, x
+LFF1B, x
+LFF24, x
+LFF45, x
+LFF9E, x
+LINLIN, x
+LINWID, x
+MRCHKR, x
+MRCHR, x
+NCMWFL, x
+NULCNT, x
+NULL, x
+OUTDO1, x
+PATCH1, x
+PATCH2, x
+PATCH3, x
+PATCH4, x
+PATCH6, x
+PATCH7, x
+PKINC, x
+PRTNUL, x
+RESPUL, x
+SNERRX, x
+STORD1, x
+SVAR, x
+SVARGO, x
+SVARS, x
+TRYOUT, x
+TVAR, x
+UNLSN1, x
+ERRNF, x
+USRPOK, $4C constant = JMP
+ADDPRC, USR vector - Lo/Hi
+BLF,x
+ADDPR2, x
+BDF, x
+BUFPAG, x
+CHARAC, Starting delimiter / Search character
+INTEGR, 1 byte integer from "qint"
+STRSIZ, # locations per descriptor
+ADDPR4, (Scan between quotes flag)
+BDFH, x
+ENDCHR, Ending delimiter
+SBERR, x
+EOT, x
+COUNT, General counter (Input buffer pointer; # of subscripts)
+DIMFLG, Flag to remember dimensioned variables
+VALTYP, Flag for variable type: 00=numeric; ff=string
+ADDPR8, x
+INTFLG, Flag for # type: 80=integer; 00=floating point
+LBERR, x
+NCMDS, x
+DORES, Flag whether can crunch reserved words
+GARBFL, x
+CLMWID, Size of print window
+SUBFLG, Flag which allows subscripts in syntax (FNX flag)
+INPFLG, Flags input or read (00=INPUT; 40=GET; 98=READ)
+DOMASK, Mask used by relation operations (Comparison Evaluation Flag)
+TANSGN, Flag sign of tangent
+CR,     Carriage Return value (constant)
+DSDESC, ds$ length
+CHANL,  Active I/O Channel #
+CHANNL, Active I/O Channel #
+ERRSN, x
+SPERR, x
+LINNUM, Line # storage Lo/Hi
+POKER,  Holds address for POKE command (Integer value for SYS & GOTO)
+FORSIZ, # of bytes used on stack for-next
+TEMPPT, index to next available descriptor
+LASTPT, Pointer to last $ temp (Pointers for descriptor search)
+ERRRG, x
+TEMPST, Storage for numtp temp descriptors
+NUMLEV, # of GOSUB levels allowed
+NCMPOS, x
+INDEX,  Indirect index #1 - Lo/Hi
+INDEX1, Indirect index #1 - Lo/Hi
+CKERR, x
+INDEX2, Indirect index #2 - Lo/Hi
+RESHO,  Res - register (Product area for multiplication - 5 bytes)
+RESMOH, x
+ADDEND, Temp used by "umult"
+RESMO, x
+RESLO, x
+LINLEN, x
+TXTTAB, Pointer to start of BASIC text - Lo/Hi
+ERROD, x
+VARTAB, Pointer to start of variables - Lo/Hi
+ARYTAB, Pointer to start of array table - Lo/Hi
+STREND, Pointer to end of variables - Lo/Hi
+FRETOP, Pointer to start of actual strings - Lo/Hi
+FRESPC, Pointer to top of free string space - Lo/Hi
+MEMSIZ, Highest RAM address available for BASIC - Lo/Hi
+ERRFC, x
+CURLIN, Current line # being executed - Lo/Hi
+OLDLIN, Last line # executed (for CONT command) - Lo/Hi
+OLDTXT, Old txtptr (for CONT) & temp storage - Lo/Hi
+DATLIN, Current data line # (in case of errors) - Lo/Hi
+DATPTR, Data statement pointer - Lo/Hi
+INPPTR, Source pf input address - Lo/Hi
+APEN, x
+VARNAM, Current variable name - 2 byte
+FDECPT, Pointer into powers of 10 for "fout"
+VARPNT, Pointer into variable in memory - Lo/Hi
+ERROV, x
+ANDMSK, x
+FORPNT, Pointer into current FOR-NEXT variable reference - Lo/Hi
+LSTPNT, Pointer to list $ - Lo/Hi
+EORMSK, x
+OPPTR, Pointer to current operator in table - Lo/Hi
+VARTXT, Pointer into list of variables - Lo/Hi
+OPMASK, Mask created by current operator (Comparison symbol accumulator)
+DEFPNT, Pointer used in function definition
+GRBPNT, Pointer used in garbage collection
+TEMPF3, A third FAC temporary - 4 bytes (misc work area - 6 bytes)
+DSCPNT, Pointer to a string description
+ERROM, x
+FOUR6, Variable constant used by garbage collection
+BUFLEN, x
+JMPER, 4c = JMP: subroutine for dispatch of functiond
+SIZE, address for dispatch of functions - Lo/Hi
+OLDOV, The old overflow
+TEMPF1, A FAC temp - 4 bytes (misc numeric work area - 10 bytes)
+ARYPNT, A pointer used in array building
+HIGHDS, Destination of highest element in blt.
+HIGHTR, Souce of highest element to move
+TEMPF2, A FAC temp - 4 bytes
+DECCNT, # of places before decimal point
+ERRUS, x
+LOWDS, Location of last byte transferred into
+TENEXP, Base 10 exponent for "fin" & "fout"
+DPTFLG, Flag if a decimal point has been input
+GRBTOP, Pointer used in garbage collection
+LOWTR, Last thing to move in blt.
+EPSGN, x
+EXPSGN, Sign of base 10 exponent
+DSCTMP, This is where temp descs are built
+FAC, Main floating-point accumulator (Mantissa - 5 bytes)
+FACEXP, The exponent byte
+FACHO, Most significant byte of mantissa
+FACMOH, One more
+FACMO, Middle order of mantissa
+INDICE, Indice is set up here buy "qint"
+FACLO, Least significant byte of mantissa
+FACSGN, Sign of FAC. = 0 or -1 when unpacked
+DEGREE, A constant used by polynomials (Series evaluation constant pointer)
+SGNFLG, Sign of FAC is preserved here by "fin"
+BITS, Counter for # of bit shifts to normalize FAC (FAC overflow)
+ARGEXP, Argument register exponent (Accum. #2 - 6 bytes)
+ARGHO, x
+ARGMOH, x
+ARGMO, x
+ARGLO, x
+ARGSGN, The sign - same as FAC
+ERRBS, x
+ARISGN, A sign reflecting the result (Sign comparison - Acc. #1 vs #2)
+STRNG1, Pointer to a $ or descriptor
+FACOV, Overflow byte of the FAC (Accum. #1 lo-order - rounding)
+BUFPTR, Pointer to buffer used by "crunch" - Lo/Hi
+CURTOL, Absolute linear index is formed here (Cassette buff len/Series pointer)
+FBUFPT, Pointer to "fbuffer" used in "fout"
+POLYPT, Pointer to polnomial coefficients
+STRNG2, Pointer to $ or desc.
+CHRGET, Subroutine - gets next character from BASIC text (23 bytes)
+CHRGOT, Subroutine - regets current character from B. text
+TXTPTR, Pointer to current BASIC source text - Lo/Hi
+ERRDD, x
+QNUM, x
+ENDTK, (BASIC token constant)
+FORTK, (BASIC token constant)
+DATATK, (BASIC token constant)
+ERRDVO, x
+CHRRTS, End of chrget
+RNDX, Next Random number - 6 bytes
+GOTOTK, (BASIC token constant)
+CTIMR, Jiffy (1/60th sec.) clock for TI and TI$ - 3 bytes
+GOSUTK, (BASIC token constant)
+TIME, x
+REMTK, (BASIC token constant)
+CINV, IRQ interrupt vector - Lo/Hi
+ONTK, (BASIC token constant)
+CBINV, BRK interrupt vector - Lo/Hi
+NMINV, NMI interrupt vector - Lo/Hi
+ERRID, x
+CSTAT, x
+SATUS, Variable ST - I/O Status byte
+LSTX, Which key down; 255=none
+SFST, Shift key: 1 if depressed
+CRFAC, Correction factor for clock - 2B
+PRINTK, (BASIC token constant)
+STKEY, Copy of keyboard PIA @ e812: STOP and RVS flags
+SVXT, Timing constant for tape
+VERCK, Load=0, Verify=1
+NDX, Number of characters in keyboard buffer
+RVS, Screen reverse flag
+C3P0, IEEE output; 255=character pending
+INDX, (End-of-line-for-input pointer)
+SCRATK,(BASIC token constant)
+SNSW, x
+ERRTM, x
+LSXP, Cursor row
+TABTK, (BASIC token constant)
+LSTP, Cursor column
+TOTK, (BASIC token constant)
+BSOUR, (IEEE output buffer)
+FNTK, (BASIC token constant)
+SFDX, Key image
+SPCTK, (BASIC token constant)
+BLNSW, (0=flash cursor)
+THENTK, (BASIC token constant)
+BLNCT, Blink counter for cursor flash
+NOTTK, (BASIC token constant)
+GDBLN, Character under cursor
+STEPTK, (BASIC token constant)
+BLNON, Cursor in blink phase
+PLUSTK, (BASIC token constant)
+MINUTK, (BASIC token constant)
+SYNO, EOT received from tape
+CRSW, (Input from screen/from keyboard)
+XSAV, X save
+LDTND, How many open files
+DFLTN, Default input device, normally 0
+DFLTO, Default output device, normally 3
+ERRLS, x
+GREATK, (BASIC token constant)
+PRTY, Tape character parity
+DPSW, (Byte received flag)
+EQULTK, (BASIC token constant)
+LESSTK, (BASIC token constant)
+WSW, (Logical Address temporary save)
+ONEFUN, x
+SAVX, Place to save X
+T1, (Tape buffer character; Monitor command)
+RCNT, (Temporary counter - File name pointer)
+T2, x
+TMPC, x
+T3, x
+TMPC2, x
+PCNTR, Serial bit count
+PTCH, x
+FIRT, (Cycle counter)
+CNTDN, Tape writer countdown
+BUFPT, Tape buffer pointers, #1 and #2 - Lo/Hi
+SHCNL, (Write leader count; read pass1/2)
+RER, (Read error flag - Write new byte)
+ERRBD, x
+REZ, (Read bit seq error - Write start bit)
+BUFSZ, x
+PTR1, Error log pointers - pass 1
+PTR2, Error log pointers - pass 2
+RDFLG, 0=Scan/1-15=Count/$40=Load/$80=End
+SHCNH, Write leader length; read checksum
+PNT, Pointer to screen line address - Lo
+POINT, Pointer to screen line address - Hi
+PNTR, Column of cursor on screen line
+TRMPOS, x
+LASNUM, x
+SAL, Start address Lo - pointer: tape, scroll
+ERRST, x
+SAH, Start address Hi - pointer: tape, scroll
+EAL, End address Lo  End of current program
+EAH, End address Hi  End of current program
+CMP0, (Tape timing constants - 2 bytes)
+GOTK, (BASIC token constant)
+TEMP, x
+QTSW, (0=direct cursor, else programmed)
+SNSW1, (Tape read timer 1 enabled)
+DIFF, (EOT received from tape)
+PRP, (Read character error)
+XID, x
+FNLEN, File name length
+XD1, x
+LA, Current file logical address
+XD2, x
+SA, Current file secondary addrs
+FA, First address - current file device number
+LNMX, Right-hand window or line margin
+TBUF, Pointer: Start of tape buffer - Lo/Hi
+TBLX, Active cursor line
+data, Last key/checksum/misc.
+FNADR, File name address pointer - Lo/Hi
+ERRCN, x
+INSRT, Number of INSERTs outstanding
+OCHAR, Write shift word/read character in
+FSBLK, x
+WRAP, x
+MYCH, Serial word buffer
+LDTB1, Top/bottom of window - 2 bytes - 80 column.
+XREC, x
+XWRT, x
+ERRUF, x
+XFN1, x
+XFN2, x
+CAS1, Cassette #1 status
+CAS2, Cassette #2 status
+STAL, Start tape address - Lo
+TMP0, Indirect 1 - Lo/Hi
+STAH, Start tape address - Hi
+FNADR2, x
+TMP2, Indirect 2 - Lo/Hi
+LOFBUF, + index = start of "fout" $ for "strd" & ti$
+PI, x
+BAD, Processor stack (STR$ work area, Monitor work area)
+FBUFFR, x
+STKEND, Stack end for BASIC
+BUF, Input buffer - 81 bytes
+BUFOFS, x
+PCH, PC - Hi
+PCL, PC - Lo
+FLGS, Flags - 6502 ST register
+ACC, Acc
+XR, X reg.
+YR, Y reg.
+SP, SP
+INVH, User IRQ - Hi
+INVL, User IRQ - Lo
+SAVNAM, x
+ZZZ1, x
+LAT, File logical adress table - 10 bytes
+FAT, File first address table - 10 bytes
+SAT, File secondary address table - 10 bytes
+KEYD, Keyboard input buffer - 10 bytes
+TAPE1, Tape#1 input buffer - xx bytes
+FNLEN2, DOS character pointer
+POS, x
+TAPE2, Tape#2 input buffer - xx bytes
+DRIVE1, DOS drive 1 flag
+DRIVE2, DOS drive 2 flag
+DIDCHK, x
+LRECL, (DOS length/write flag)
+parchk, DOS parameter check - syntax flags
+DISKID, DOS disk ID - 2 bytes
+count, DOS command string count
+TBUF2, DOS file name buffer - 10 bytes
+TBUFF, DOS commend string buffer - 46? bytes
+USRCMD, Monitor extension vector - Lo/Hi
+BOB, IEEE timeout defeat
+RAMLOC, Available RAM for BASIC text - through $7fff
+OFFSET, Screen RAM - through $83ff 40-col. / $87ff 80 col.
+ROMLOC, First ROM location
+STMDSP, Start of instruction dispatch table
+FUNDSP, Start of function dispatch table
+USRLOC, USR instruction's jump address within function
+OPTAB, Start of math operators dispatch table
+NEGTAB, Unitary negate dispatch .by 7d
+NOTTAB, Not operator dispatch - .by 5a
+PTDORL, Comparison dispatch - .by 64
+RESLST, Start of reserved word list (Shift flags end of keyword)
+ERRTAB, Start of BASIC error message storage
+ERR, Message - error
+INTXT, Message - in
+REDDY, Message - ready.
+BRKTXT, Message - break
+FNDFOR, Peeks at the stack for an active "for" loop
+FFLOOP, (Top of "for" peek loop)
+CMPFOR, (Compare stack to for/next variable pointer)
+ADDFRS, (No match, check further)
+FFRTS, (End of "for" keep)
+BLTU, Opens up a space in BASIC for a new line
+BLTUC, (Entry from d502-2.0)
+BLT1, +
+BLTLP, +
+MOREN1, +
+DECBLT, +
+GETSTK, Test if stack too deep - abort if is
+REASON, Checks for available memory space
+TRYMOR, +
+REASAV, +
+REASTO, +
+REARTS, (End of mem check)
+OMERR, Preset for "Out of memory" and...
+ERROR, Error handler - message index in X and...
+ERRCRD, (Do "crlf" and...)
+GETERR, (Read error message from table and...)
+TYPERR, Restore data pointer & Print "error" and...
+ERRFIN, (Print string - address in A & Y and...)
+READY, Warm start of BASIC - NMI vector in 2.0 and 4.0
+MAIN, Main BASIC loop - analyzes input lines
+MAIN1, Lines that start with a no. handled here
+QDECT1, +
+MLOOP, +
+NODEL, (Adjust pointers for cold start)
+NODELC, +
+STOLOP, (Top of minor loop)
+FINI, Cleans up BASIC system - CLR
+LNKPRG, Relinks BASIC instructions in text area
+CHEAD, +
+CZLOOP, (Count til find zero)
+LNKRTS, (End of link)
+INLIN, Receive line into input buffer - max. len 79+RETURN
+INLINC, (get a character from the keyboard)
+FININ1, +
+CRUNCH, Looks up keywords in an input line
+KLOOP, +
+CMPSPC, (a SPACE?)
+KLOOP1, (a "0"?)
+MUSTCR, +
+RESER, +
+RESCON, +
+GETBPT, +
+STUFFH, +
+COLIS, +
+NODATT, +
+STR1, +
+STRNG, +
+NTHIS, +
+NTHIS1, +
+NTHIS2, +
+CRDONE, +
+FNDLIN, Search for address if line whose# is in "linnum"
+FNDLNC, (Entry from b84b)
+FNDLO1, +
+AFFRTS, +
+FLINRT, (line # not found)
+FLNRTS, (line # found)
+SCRATH, NEW instruction - clears all pointers
+SCRTCH, (Entry from d445)
+RUNC, (adjust pointers for cold stat of BASIC)
+CLEAR, CLR instruction - (clears variable pointers)
+CLEARC, (Entry from b80d)
+FLOAD, (Restore data pointer)
+STKINI, (Entry from b3ed)
+STKRTS, +
+STXTPT, "txtptr"="txttab"-1
+LIST, LIST instruction
+GOLST, (Convert char. $ to # in 11-12)
+LSTEND, +
+TSTDUN, (done?)
+TYPLIN, (Print the integer in A;X)
+PRIT4, +
+PLOOP, (Print character in A)
+PLOOP1, +
+GRODY, (Jump to "ready")
+QPLOP, +
+RESRCH, +
+RESCR1, +
+RESCR2, +
+PRIT3, +
+PRIT3B, +
+FOR, FOR instruction
+NOTOL, +
+LDFONE, (Continue to build FOR vectors)
+ONEON, (Extract a FAC sign)
+NEWSTT, Read & execute next statement
+DIRCON, +
+DIRCN1, +
+GONE, Dispatches next byte "chrget" returns
+GONE3, Dispatches A if <>0 else loop to "newstt"
+GONE2, (Entry from b8e7)
+GONE4, +
+GLET, (Jump to perform LET)
+MORSTS, (A ":"?)
+SNERR1, (Jump to print "syntax error")
+GO, Handle GO token - find a TO
+RESTOR, RESTORE statement
+RESFIN, (Entry from bce2)
+ISCRTS, (End of RESTORE)
+STOP, STOP instruction if carry set - else...
+BSTOP, O.S. Substitute: "stop" is also a label at $f343
+END, END instruction
+STOPC, (<>00?)
+STPEND, (Entry from bbf2)
+DIRIS, +
+ENDCON, (Entry from b766)
+GORDY, Jump to "ready"
+CONT, CONT instruction
+CONTRT, (End of CONT)
+RUN, RUN instruction
+GOSUB, GOSUB instruction
+RUNC2, (Entry from b810)
+GOTO, GOTO instruction
+LUK4IT, +
+LUKALL, +
+GORTS, (End of GOTO)
+RETURN, RETURN instruction
+USERR, Print "undefined instruction error"
+SNERR2, Jump to "syntax error"
+RETU1, +
+DATA, (DATA instruction)
+ADDON, (Add Y to scan pointer)
+REMRTS, (End of DATA)
+DATAN, Scan for next ":"
+REMN, Scan for next end-of-line - "txtptr" offset in Y
+EXCHQT, +
+REMER, +
+IF, IF instruction
+OKGOTO, (Allow GOTO after IF)
+REM, REM instruction
+DOCOND, +
+DOCO, (Jump to do instruction)
+ONGOTO, ON instruction
+SNERR3, (Must include GOTO or GOSUB - else "syntax error")
+ONGLOP, +
+ONGLP1, (Get next char. & convert $ to #)
+ONGRTS, (End of ON)
+LINGET, Get integer from BASIC & put in "linnum"
+MORLIN, (Entry from b92d)
+NXTLGC, (Get next char. from input buffer)
+LET, LET instruction
+QINTGR, (Entry from bc8a)
+COPFLT, ("fac" to FOR pointer)
+COPSTR, +
+INPCOM, (Entry from bc7f)
+TIMELP, +
+NOML6, +
+TIMEST, +
+TIMNUM, +
+FCERR2, Jump to "illegal quantity error"
+GOTNUM, +
+GETSPT, Copy strings if needed
+DSKX1, +
+DSKX2, +
+QVARIA, +
+DNTCPY, (Don't copy)
+COPY, (Do copy)
+COPYC, (Entry from b9f3)
+COPY00, +
+COPY01, +
+COPY02, +
+STRADJ, Point to string for a copy
+ADJ, +
+LBA74, x
+ADJ00, +
+ADJ01, +
+PRINTN, PRINT# instruction
+CMD, CMD instruction
+SAVEIT, +
+STRDON, +
+NEWCHR, (Get current character from buffer)
+PRINT, PRINT instruction
+PRINTC, (Entry from bb15)
+FININL, (Entry from b4f8)
+CRDO, Print RETURN character
+CRFIN, (Entry from bb34)
+PRTRTS, +
+COMPRT, (Process "," char to correct column)
+MORCO1, +
+TABER, TAB & SPC handler
+ASPAC, +
+XSPAC, +
+XSPAC2, +
+NOTABR, +
+XSPAC1, (Jump to print CURSOR-RIGHT)
+STROUT, Output string address in Y and A - end with 00
+STRPRT, Print string pointed to by "index"
+STRPR2, (Entry from bb32)
+OUTSPC, Output a SPACE
+CRTSKP, Output a CURSOR-RIGHT
+OUTQST, Output a "?"
+OUTDO, Output character in A
+OUTRTS, (Force ST register bits)
+TRMNOK, Handles bad input data
+GETDTL, +
+STCURL, (Store current line #)
+SNERR4, Jump to "syntax error"
+TRMNO1, +
+DOAGIN, (Print "redo from start" and...)
+GET, GET instruction
+GETTTY, +
+INPUTN, INPUT# instruction
+IODONE, Restore input to keyboard
+IORELE, +
+INPUT, INPUT instruction
+NOTQTI, +
+GETAGN, (To prompt & receives INPUT)
+BUFFUL, +
+PTHRTI, +
+QINLIN, Prompts for & recieves INPUT
+GINLIN, +
+READ, READ instruction
+INPCON, +
+INPCO1, (Entry from bb9c - with A=40 for GET)
+INLOOP, (Entry from bcb1)
+QDATA, +
+GETNTH, (To prompt & input)
+DATBK, +
+DATBK1, (Entry from bcd7)
+SETQUT, +
+RESETC, +
+NOWGET, +
+NOWGE1, +
+NUMINS, +
+STRDN2, (Entry from bc82)
+TRMOK, +
+DATLOP, +
+NOWLIN, +
+VAREND, +
+VARY0, Print "extra ignored" if @ kbd. & find a seperator
+INPRTS, End of READ
+EXIGNT, Message "extra ignored"
+TRYAGN, Message "?redo from start"
+NEXT, NEXT instruction
+GETFOR, (Entry from bd81)
+STXFOR, +
+ERRGO5, (To "next without for error")
+HAVFOR, +
+NEWSGO, +
+LOOPDN, Check data format - (check type mismatch)
+FRMNUM, Jump to "frmevl"
+CHKNUM, Check that current type is numeric
+CHKSTR, Check that current type is string - cks. "valtyp"
+CHKVAL, +
+CHKOK, +
+DOCSTR, +
+CHKERR, Print "type mismatch error"
+ERRGO4, +
+FRMEVL, Formula evaluator - evaluates all formulas
+FRMEV1, +
+LPOPER, (Entry from be27)
+TSTOP, +
+LOPREL, +
+ENDREL, +
+QPREC, +
+DOPREC, +
+NEGPRC, +
+FINREL, +
+FINRE2, +
+QPREC1, +
+DOPRE1, +
+SNERR5, +
+PUSHF1, +
+PUSHF, +
+FORPSH, +
+QOP, +
+QOPGO, +
+QCHNUM, +
+UNPSTK, +
+PULSTK, Restore "arg" from stack (pushed evaluation)
+QOPRTS, +
+UNPRTS, +
+EVAL, Evaluates numeric formulas
+EVAL0, +
+EVAL1, +
+EVAL2, +
+PIVAL, Binary value of pi
+QDOT, +
+STRTXT, Immediate strings handler
+STRTX2, +
+EVAL3, +
+NOTOP, Eval - not
+EVAL4, +
+PARCHK, Evaluate functions within parentheses (frmeul)
+CHKCLS, Check for right  parenthesis - )
+CHKOPN, Check for left parenthesis - (
+CHKCOM, Check for a comma - ,
+SYNCHR, Compare "txtptr" against A, if <> then...
+SNERR, Print "syntax error" & exit
+DOMIN, Set up function for future evaluation
+GONPRC, +
+CKSUMB, Checksum byte for the $b000 rom
+LBF0D, x
+PABBO, Patches
+PATCHG, +
+PCTH0, +
+PCTH1, +
+PATCHH, +
+PATCHI, +
+ISVAR, Set up a variable name search
+ZZ6, +
+ISVRET, +
+ISVDS, ds$ test and handler
+STRRTS, +
+GOOO, +
+GOOOOO, +
+CHKDS, Check for DS variable
+GETTIM, Assign time to TI
+QSTATV, +
+QDSAV, +
+GOMOVF, +
+ISFUN, Dispatch and eval if it's a function (Set up function references)
+OKNORM, + [iknorm is typo?]
+FINGO, Place function dispatch address in "jumper" & go
+OROP, OR instruction
+ANDOP, AND instruction
+DOREL, "<" instruction
+STRCMP, +
+STASGN, +
+NXTCMP, +
+QCOMP, +
+GETCMP, +
+DOCMP, +
+GOFLOT, +
+DIM3, Re-entry for multi-dim array
+DIM, DIM instruction
+PTRGET, Searches for a BASIC variable
+PTRGT1, +
+PTRGT2, +
+INTERR, Jump to "Syntax error"
+PTRGT3, +
+ISSEC, +
+EATEM, +
+NOSEC, +
+NOTSTR, +
+TURNON, +
+STRNAM, +
+STXFND, (Find a BASIC variable)
+LOPFND, +
+LOPFN, +
+NXTPTR, Move search to next table entry
+NOTIT, +
+ISLETC, (Test A, set flags)
+ISLRTS, +
+NOTFNS, Did not find variable - create a new one
+LDZR, +
+NOTEVL, (Test for TI)
+GOBADV, (Jump to "syntax error")
+QSTAVR, Test for ST
+QDSVAR, Test for DS
+VAROK, Good usable variable
+NOTEVE, +
+ARYVA2, +
+ARYVA3, +
+ARYVGO, Search the arrays
+ARYGET, Move thru the array tables
+GOGO, +
+GOGO1, +
+DVARTS, +
+ARYDON, +
+FINPTR, Logs basic variable location [Bump address by 2]
+FINNOW, +
+FMAPTR, Array pointer subroutine(Set up array pointer)
+JSRGM, +
+N32768, Floating point binary value -32768 (top of screen)
+INTIDX, Evaluate formula - results is positive integer
+POSINT, Convert floating binary to positive integer
+AYINT, Convert floating binary to integer
+NONONO, Branch to "illegal quantity error"
+QINTGO, Jmp "qint"
+ISARY, Locates and/or creates arrays (to C4A7 4.0)
+INDLOP, +
+LOPFDA, +
+LOPFDV, +
+NMARY1, +
+BSERR, Print "bad subscript error"
+FCERR, Print "illegal quantity error"
+ERRGO3, (Jump to error message)
+GOTARY, x
+NOTFDD, + (nptfdp is typo)
+NOTFLT, +
+STOMLT, +
+LOPPTA, +
+NOTDIM, +
+GREASE, (Check available memory space)
+ZERITA, +
+DECCUR, +
+GETDEF, +
+INLPNM, +
+BSERR7, Jump to "bad subscript error"
+OMERR1, Jump to "out of memory error"
+INLPN2, +
+INLPN1, +
+ADDIND, +
+NOTFL1, +
+STOML1, +
+DIMRTS, +
+UMULT, Integer arithmetic routines for multi-dim arrays
+UMULTD, +
+UMULTC, +
+UMLCNT, +
+UMLRTS, +
+FRE, FRE instruction
+NOFREF, (Do garbage collection)
+GIVAYF, Converts integer to floating binary
+SNGFLT, +
+ERRDIR, Is instruction type indirect only?
+ERRGUF, Print "illegal direct"
+DEF, DEF instruction; also evaluates FN
+GETFNM, (check FN syntax)
+FNDOER, Evaluates FN
+DEFSTF, +
+DEFFIN, +
+STRD, STR$ instruction
+TIMSTR, Make a string out of info at $01ff
+STRINI, Make a string at address in "facmo pointer"
+STRSPA, +
+STRLIT, Scans at sets up string elements
+STRLT2, +
+STRGET, +
+STRFIN, +
+STRFI1, +
+STRFI2, +
+STRST2, +
+STRCP, +
+PUTNEW, Check string temps - place data in temps
+ERRGO2, -1=Print "formula to complex error"
+PUTNW1, +
+GETSPA, Builds string vectors
+TRYAG2, +
+TRYAG3, +
+TRYAG4, +
+STRFRE, +
+GETRTS, +
+GARBAG, +
+GARBA2, Does 'garbage collection' - packs strings
+GLOOP, +
+COL00, +
+COL00B, +
+COL00A, +
+COL01, +
+COL02, +
+GLOP1, +
+COL02B, +
+COL02A, +
+GRBEND, Jmp "endgrb"
+COL03, +
+ENDGRB, Moves "frespc" to "fretop"
+SKIP2, +
+SKIP2A, +
+MOVPNT, +
+MOV00, +
+MOVTOP, +
+MOV01, +
+SETINX, +
+SET00, +
+CAT, Concatenate two strings: "fac" and "txtptr"
+SIZEOK, +
+MOVINS, (Store string)
+MOVSTR, +
+MOVDO, +
+MOVLP, +
+MVDONE, +
+MVSTRT, +
+FRESTR, (Discard unwanted string)
+FREFAC, +
+FRETMP, Frees up temporary string pointers
+RES00, +
+FRE01, +
+FREPLA, +
+FRE02, +
+FRETMS, (Clean descriptor stack)
+FRERTS, +
+CHRD, CHR$ instruction
+LEFTD, LEFT$ instruction
+RLEFT, +
+RLEFT1, +
+RLEFT2, +
+RLEFT3, +
+PULMOR, +
+RIGHTD, RIGHT$ instruction
+MIDD, MID$ instruction
+MID2, +
+PREAM, Used by right - (pull string data)
+LEN, LEN instruction
+LEN1, (Switch string to numeric)
+ASC, ASC instruction
+GOFUC, Jump to "illegal quantity error"
+GTBYTC, Does a "chrget" and "getbyt"
+GETBYT, Egaulate the formula and...
+CONINT, (Get a single byte value and return it in X)
+VAL, VAL instruction
+VAL2, +
+ST2TXT, +
+VALRTS, +
+GETNUM, Evaluate formula and return integer value (0-65535) (Get two parameters for POKE or WAIT)
+COMBYT, +
+GETADR, Convert "fac" to integer - place in "poker"
+PEEK, PEEK instruction
+GETCON, +
+DOSGFL, +
+POKE, POKE instruction
+FNWAIT, WAIT instruction
+STORDO, +
+WAITER, +
+ZERRTS, +
+FADDH, Add 1/2 to fpb value in fac
+FSUB, Move memory to "arg" and...
+FSUBT, "-" instruction: fac=fac-arg
+FADD5, +
+FADD, Move  memory to "arg" and...
+FADDT, "+" instruction: fac=fac+arg
+FADDC, +
+FADDA, +
+FADD1, +
+FADD4, +
+SUBIT, +
+FADFLT, +
+NORMAL, Normalize "fac" - results of addition & subtraction
+NORM3, +
+ZEROFC, "fac"=0
+ZEROF1, +
+ZEROML, Make sign positive
+FADD2, +
+NORM2, +
+NORM1, +
+SQUEEZ, +
+RNDSHF, +
+RNDRTS, +
+NEGFAC, Complement "fac" entirely
+NEGFCH, Complement just the number in "fac"
+INCFAC, Increment "fac"
+INCFRT, +
+OVERR, Print "overflow error"
+MULSHF, Shifer routines - (multiply a byte)
+SHFTR2, +
+SHIFTR, +
+SHFTR3, +
+SHFTR4, +
+ROLSHF, +
+SHFTRT, +
+FONE, Floating-point-binary constant: 1
+LOGCN2, Floating-point-binary constant: 2.34518945e-38
+SQR05, Floating binary value: 1/sqr(2)
+SQR20, Floating binary value: sqr(2)
+NEGHLF, Floating binary value: 1/2
+LOG2, Floating binary value: ln(2)
+LOG, LOG instruction
+LOGERR, Jump to illegal quantity error"
+LOG1, +
+MULLN2, +
+FMULT, Multiply: "fac"="fac"*"arg"
+FMULTT, "*" instruction: "arg" and "fac" loaded
+MLTPLY, +
+MLTPL1, +
+MLTPL2, +
+MLTPL3, +
+MULTRT, +
+CONUPK, Unpack memory into "arg"
+MULDIV, Check and adjust exps or FPB mult and div (Test & adjust "fac" & "arg")
+MLDEXP, +
+TRYOFF, +
+MLDVEX, (Handle overflow and underflow)
+ZEREMV, +
+GOOVER, Jump to "overflow error"
+MUL10, Multiply: "fac"="fac"*10
+FINML6, +
+MUL10R, +
+TENC, Floating point binary value of 10
+DIV10, Divide: "fac"="fac"/10
+FDIVF, (Perform divide-by)
+FDIV, Unpack memory and divide - (do divide-into)
+FDIVT, "/" instruction: "fac"="arg"/"fac"
+DIVIDE, +
+SAVQUO, +
+QSHFT, +
+SHFARG, +
+DIVSUB, +
+LD100, +
+DIVNRM, +
+DV0ERR, Print "division by zero error"
+MOVFR, Move "res" to "fac"
+MOVFM, Move memory to "fac"
+MOV2F, (Pack "fac" into memory)
+MOV1F, +
+MOVVF, +
+MOVMF, (Round off "fac" and) move "fac" to memory
+MOVFA, Move "arg" to "fac"
+MOVFA1, +
+MOVFAL, +
+MOVAF, Move "fac" to "arg" with round-off
+MOVEF, (Move "fac" to "arg" without roundoff)
+MOVAFL, +
+MOVRTS, +
+ROUND, Round-off "fac"
+INCRND, +
+SIGN, Extract sign from "fac" - place in A
+FCSIGN, +
+FCOMPS, +
+SIGNRT, +
+SGN, SGN instruction
+FLOAT, Float the signed integer in "fac"
+FLOATS, Float the signed number in "fac"
+FLOATC, +
+FLOATB, +
+ABS, ABS instruction
+FCOMP, Compare "arg" and "fac": A=1 if "arg"<"fac" (Compare "fac" to memory)
+FCOMPN, +
+FCOMPC, +
+FCOMPD, +
+QINT, Floating to fixed conversion: "fac"=int("fac")
+QISHFT, +
+QINTRT, +
+QINT1, +
+INT, INT instruction
+CLRFAC, Fill all positions of "fac" with contents of A
+INTRTS, +
+FIN, Convert input string to floating-pt. value in "fac"
+FINZLP, +
+QPLUS, +
+FINC, +
+FINDGQ, +
+FIN1, +
+FINEC1, +
+FINEC, +
+FNEDG1, +
+FINEC2, +
+FINDP, +
+FINE, +
+FINE1, +
+FINDIV, +
+FINMUL, +
+FINQNG, +
+NEGXQS, +
+FINDIG, +
+FINDG1, +
+FINLOG, (Get new ASCII digit)
+FINEDG, +
+MLEX10, +
+MLEXMI, +
+N0999, Floating binary constant: 99999999.90625
+N9999, Floating binary constant: 99999999.5
+NMIL, Floating binary constant: 1**+9
+CHSUMC, Checksum byte $c000 ROM
+INPRT, Print current line number - (Print "in" then #)
+LINPRT, Print current line number (Print "in", then #)
+STROU2, Jump to "strout"
+FOUT, Convert "fac" to string ending in 0, address in A & Y
+FOUTC, +
+FOUT1, +
+FOUT37, ("fac"="fac"*1**+9)
+FOUT7, +
+FOUT4, +
+FOUT3, (Multiply/Divide by 10)
+FOUT38, +
+FOUT9, +
+FOUT5, +
+BIGGES, (Convert "fac" to positive integer)
+FOUTPI, +
+FOUT6, +
+FOUT39, +
+FOUT16, +
+FOUT8, +
+FOUTIM, Clock entry into "fout"
+FOUT2, +
+FOUT41, +
+FOUT40, +
+FOUTYP, +
+STXBUF, +
+FOULDY, +
+FOUT11, +
+FOUT12, +
+FOUT14, +
+FOUT15, +
+FOUT19, +
+FOUT17, +
+FOUT20, +
+FHALF, Floating binary value: 1/2
+ZERO, +
+FOUTBL, Tables of powers of -10**: (2.86868289E+36)
+FDCEND, End of powers table
+SQR, SQR instruction
+TIMEND, End of time conversion tables
+FPWRT, [up-arrow] instruction: "arg"**"fac"
+FPWRT1, +
+FPWR1, +
+NEGOP, ">" instruction - Negate the number in "fac"
+NEGRTS, +
+LOGEB2, Floating binary value: log(E) in base 2
+EXPCON, LOG and exponent - floating binary tables
+EXP, EXP instruction (of "fac")
+STOLD, +
+GOMLDV, +
+EXP1, +
+SWAPLP, +
+POLYX, Polynomial evaluator (function series evaluation)
+POLY, +
+POLY1, +
+POLY3, (Multiply "fac" * "bufptr")
+POLY2, +
+POLY4, +
+RMULC, (RND constants)
+RADDC, +
+RND, RND instruction
+QSETNR, (Calculate new random number: "fac"=rnd("fac")
+RND1, (Scramble "fac" mantissa)
+STRNEX, +
+GMOVMF, +
+COS, COS instruction
+SIN, SIN instruction
+SIN1, (Gosub ">" routine)
+SIN2, +
+SIN3, +
+TAN, TAN instruction
+COSC, x
+PI2, Floating binary value of pi/2
+TWOPI, Floating binary value 2*pi
+FR4, Floating binary value 1/4
+SINCON, SIN tables - Floating binary values:-4.88193226e-38
+ATN, ATN instruction - uses "fac"
+ATN1, +
+ATN2, +
+ATN3, +
+ATN4, +
+ATNCON, (Constants: 5.79991803e-36)
+INITAT, Basic system initialization code - copy of "chrget"
+CHDGOT, +
+CHDRTS, +
+INIT, BASIC cold start - initialization and memory test
+MOVCHG, (Copy "chrget" to zero page)
+LOOPMM, +
+LOOPM1, +
+USEDEC, +
+USEDEF, +
+WORDS, Message - 'bytes free'
+FREMES, Message - "### commodore basic ###'
+CALLE, Call entry to Machine-Lanuage monitor
+LASTWR, Last byte of BASIC interpreter+1
+BRKE, Break entry to Machine-language monitor
+B3, PC-1 for Break
+B5, Print entry data
+STRT, User command input
+ST1, Input command line
+S0, Lookup command
+S1, +
+S2, Loop for all commands
+PUTP, Move "tmp0" to "pch","pc1"
+DM, Display memory routine: "ar"=# bytes, "tmp0"=address
+DM1, Write N bytes
+BYTE, Read & store byte unless space, or "tmpc"=0
+BY3, Increment "tmp0" address
+SETR, Set to access registers
+SPAC2, Print 2 spaces
+SPACE, Print 1 space
+CRLF, Print return + line-feed
+INCTMP, Increment where "tmp0" points, by one
+SETWR, +
+CMDS, Table of Monitor commands
+ADRH, Table of Monitor commands' addresses-1: Hi bytes
+ADRL, Table of Monitor commands' addresses-1: Lo bytes
+REGK, Register header display
+ALTRIT, (Begin new memory display line with prompt)
+ZZ3, x
+DSPLYR, R - Display registers command
+D2, (Read & print "regk' loop)
+ZZ4, x
+DSPLYM, M - display memory command
+DSP1, Test for stop key and ...
+BEQS1, Jump to "strt"
+ERRS1, Jump to "erropr"
+ZZ2, x
+ALTR, Alter registers
+AL2, SYS8
+AL3, Set to alter registers
+ZZ1, x
+ALTM, Alter memory - read address & data
+A4, +
+A5, +
+A9, +
+ZZ5, x
+go, G - go command
+G1, Original or new value to SP
+zz6, x
+EXIT, X - exit command
+ERRL, Jump to "erropr"
+ZZ7, x
+ZZ8, x
+LD, L - Load command - default is from cassette #1
+L1, +
+L2, File name must be next
+L3, Read file name
+L4, File name too long
+L5, Is this a load?
+L6, Not a load
+L7, Load error
+L8, Is this a default load?
+L9, Bad syntax
+L10, Device 0
+L11, Device 3
+L12, Bad syntax
+L13, Missing end address
+L20, Skip space loop
+L14, Missing [return] at end
+WROA, Monitor routines: Write address from "tmp0" stores
+WROA1, +
+WROB, Write a byte - unpack A into 2 characters in X & A
+WRTWO, Write two characters from X & A
+ASCII, (Convert low nybble to ascii)
+ASC1, +
+T2T2, Swap "tmp0" with "tmp2"
+T2T21, +
+RDOA, Read hex addr: return Hi in "tmp0", Lo in "tmp0+1"
+RDOA2, +
+RDEXIT, Exit read
+RDOB, Read hex byte and return in A
+RDOB1, Space?
+RDOB2, Convert first character to hex
+RDOB3, Convert second character to hex
+HEXIT, Input one hex digit to A
+HEX09, Exit with hex value in A
+RDOC, Read character
+ERROPR, Operator error restart
+SYNERR, To "syntax error"
+record, RECORD instruction
+NUMADR, +
+REXNEX, +
+DONER, +
+QTYER1, +
+CHK1, Disk parameter checks
+CHKER1, +
+CHK2, +
+CHK3, +
+CHK4, +
+CHK5, +
+CHK6, +
+TABLD, Dummy disk control messages
+CATLOG, CATALOG & DIRECTORY instructions
+CATALG, +
+CATBLD, +
+WG220, +
+SKIPB, +
+WG250, +
+WG255, +
+WG240, +
+WG235, +
+WG230, +
+SUBA, Output
+SUBB, +
+SUBBR, +
+ENTRY0, Find spare secondary address
+ENTRY1, +
+ENTRY2, +
+RFOUND, +
+dopen, DOPEN instruction
+DOPEN2, +
+RECLCK, +
+LEAV, +
+LEAV1, +
+append, APPEND instruction
+DAPPEN, +
+ERRCHL, Get disk status
+GETDS, +
+ECHKS, +
+EREAD, +
+LOOP1, +
+ERREND, +
+format, HEADER instruction
+FERRO, +
+DFORMA, +
+FBUILD, +
+FCONT, +
+FERRS, +
+FERRP, +
+dclose, DCLOSE instruction
+DCLSE, +
+DCLALL, +
+DCLLP, +
+DCLBYE, +
+BOBREC, Set up disk record
+DRECG, +
+DREBLD, +
+colect, COLLECT instruction
+DCOLLE, +
+DCOLL0, +
+backup, BACKUP instruction
+BERRO, +
+BBACK, +
+DBACKU, +
+TRANS, +
+TRANS1, +
+copy, COPY instruction
+COPY2, +
+COPCON, +
+COPY3, +
+concat, CONCAT instruction
+RSFN, Insert command string values
+RDFN, +
+RDMOV, +
+RDRT0, +
+RDRT1, +
+RID, +
+dsave, DSAVE instruction
+DSAVE2, +
+SAVLD0, +
+SAVLD1, +
+dload, DLOAD instruction
+DLOERR, +
+DLOAD2, +
+rename, RENAME instruction
+DREN, +
+scrtch, SCRATCH instruction
+DSCRAT, +
+NUMSCR, +
+NUMLP, +
+NUMPRT, +
+NUMBYE, +
+DDIREC, Check Direct command
+DXCR0, +
+RUSURE, Ask "are you sure?" - wait for reply
+RUSUR1, +
+RUSUR2, +
+ANSNO, +
+ANSYES, +
+ANSBYE, +
+BADDIS, Print "bad disk"
+OLDCLR, Clear DS$ and ST
+OLDCL1, +
+SENDP, Assemble disk command string
+SENDP1, +
+SENDP2, +
+RXFN1, +
+RXFN2, +
+RXREC, +
+RXID, +
+RXWRT, +
+RXD1, +
+RXD2, +
+RXDD, +
+RPLCE, +
+TRANR, +
+RWRT, +
+RWRT1, +
+RWRTS, +
+DOSPAR, Parse BASIC DOS command
+PARSEL, +
+PARNXT, +
+NEXT7, +
+SNER1, +
+LOGADR, +
+RECLEN, +
+RECOO, +
+RECON, +
+DONE1, +
+NAME11, +
+ON1, +
+UNIT1, +
+DRV1, +
+QTYER2, +
+IDENT, +
+IDCON, +
+NEXT3, +
+NEXT4, +
+NAME1, +
+LOOP6, +
+NAMCON, +
+DELIM1, +
+NXXX, +
+NEXT6, +
+NEXT6A, +
+SNER8, +
+PARSE2, +
+SNER2, +
+DRV2, +
+ON2, +
+UNIT2, +
+NAME2, +
+DELIM2, +
+SNER3, +
+DONE, +
+QTYERR, +
+ON, Get Device number
+UNIT, x
+NEWNAM, Get file name
+LENCHK, +
+ERRLEN, +
+NXXT5, +
+NEXT5, +
+NXX5, +
+GETVAL, Get small variable parameter
+GTVL2, +
+cont, +
+NUMERC, +
+CKSUMD, Checksum $d000 ROM
+PATCH2, [typo in original?]
+SIGNON, Message "*** commodore basic 4.0 ***"+[2 returns]
+CINT, (Register/screen initialization)
+PX1, Clear locations $60-$f8
+CLSR, Initialize line pointers for [clr]
+LPS1, $f4 - $f8 = $83
+LPS2, +
+LPS3, +
+LPS4, -2=Clear screen
+NXTD, Start new screen linel adj. pointers for preset line
+STUPT, +
+STUPZ, Cursor column #
+STUPR,+
+LP2, (Input from keyboard - Get character from keyboard buffer & move rest of buffer down)
+LP1, Keyboard buffer
+LOOP4, Print single character
+LOOP3, Wait for kbd. input; echo to screen, exit on [return]
+LP21, Get character from buffer
+LP23, RUN or LOAD
+LP22, +
+CLP5, +
+CLP6, +
+LOOP5, (Input from screen)
+LOP5, Cursor column #
+LOP51, Strip bits 6 & 7
+LOP54, +
+LOP52, +
+LOP53, If necessary, toggle ('quote' mode flag)
+CLP2, +
+CLP2A, Print character in acc
+CLP21, +
+CLP1, Last key = cr
+CLP7, +
+QTSWC, 'quote'
+QTSWL, +
+NXT33, +
+NXT3, Screen [rvs] flag
+NC3, +
+NVS, # of keyboard [inserts] outstanding
+NVS1, Write acc to screen
+JSTS, Cursor column #
+JSTS1, Last line
+LOOP2, +
+LOP2, +
+JSTSX, +
+JSXB, +
+JTS2, +
+SCRL, Scroll screen
+JSTS2, Line wrap table
+BKLN, Set up new screen line - Max columns per screen line
+BKLN1, +
+NTCN2, +
+PRT, Output character in A
+NJT1, +
+NTCN, Number of keyboard inserts outstanding
+CNC3X, +
+BK1, +
+BK2, +
+NTCN1, (If=0, not in quote mode)
+CNC3, +
+NC3W, [reverse]?
+NC1, [home]?
+NC2, [cursor-right]?
+JPL4, +
+NCZ2, +
+NCX2, [cursor-down]?
+JPL3, +
+PRT1, +
+PRT2, Increment cursor line number
+NXTX, +
+NXTX1, +
+UP5, (If=0, not in quote mode)
+INS3, (End of line?)
+INS1, Screen line length
+INS2, +
+UP9, # of keyboard [inserts] outstanding
+UP6, +
+UP2, [cursor-down]?
+UP1, +
+UP3, +
+NXT2, [reverse]?
+NXT6, [cursor-right]?
+NXT61, x
+JLP2, +
+NXLN, Check for & perform scrolling
+NXLN2, +
+NXLN1, +
+NXT1, Clear screen flags to 0
+SCROL, Scroll to screen
+SCRL1, +
+MLP1, +
+MLP2, +
+SCRL4, +
+SCRL5, +
+SCRL3, +
+MLP4, +
+MLP41, Wait for TI interrupt
+MLP42, +
+NEWLN, Start new screen line
+NEWLX, +
+NEWL1, +
+NEWLA, +
+NELL, +
+BLKLN, +
+BLKL, +
+PULS, Main Interrupt entry -IRQ & BRK
+PULS1, Indirect jump through IRQ vector
+KEY, 60hz hardware interrupt: clock, cursor, keyboard
+KEY5, +
+KEY4, +
+KEY3, +
+KL24, +
+KL2, +
+KL23, +
+KL25, +
+KL22, Keyboard scan
+KL1, +
+CKIS1, +
+SPCK, Key image
+CKUT, +
+CKIT, +
+CKIT1, +
+KN1, +
+KEYF, +
+PREND0, +
+PREND, (Exit from interrupt)
+DSPP, +
+CHAR, Keyboard encoding table; 10 rows of 8 values
+LDTB2, Screen table; 25 lines (80 col. $e755)
+RUNTB, Message: 'dL'"*'+[return]+"run"+[return]
+CKSUME, Checksum $e000 ROM
+PIAL, Keyboard PIA: I/O port A & data direction register
+PIAL1, Control Register A
+PIAK, I/O port B & DDR=$ff unless hitting certain keys
+PIAS, Control register B - Cassette 1 motor $35=on, $3d=off
+IEEI, IEEE PIA: I/O port A & data data direction register
+IEEIS, Control register A - set output line CA2 $34=low, $3c=high
+IEEO, I/O port B & data direction registers; Output data - set to $ff before read port A
+IEEOS, Control register B - set output line CB2 $34=low, $3c=high
+PIA, VIA: I/O port B: $cf=Cass @2 motor on, $df=Cass #2 motor off, etc.
+SYNC, I/O port A with handshaking
+P2DB, Data direction register for I/O port B
+P2DA, Data direction register for I/O port A
+CHTIM, +
+TIL, Lo byte: Read timer 1 & counter, write to timer 1 latch & ...
+TIH, Hi byte: initiate count
+TILL, Lo byte: read timer 1 latch
+TILH, Hi byte
+T2L, Read timer 2 counter log byte & reset interrupt, etc.
+T2H, Read timer 2 counter hy byte; write to timer 2 hi byte resets interrupt
+SR, Serial I/O shift register; Sets timbre and octave of CB2 sound: $0f $33 & $55 are popular settings
+ACR, Auxilliary control register: $10 enables CB2 sound; $00 allows normal I/O after CB2 sound
+PCR, Peripheral control register: $0c sets graphic mode; $0e sets text mode
+IFR, Interrupt flag register
+IER, Interrrupt enable register
+SYNC1, I/O port A without handshaking
+CR0, 6545 Video interface chip - CRT controller
+CR1, Sets top margin of screen (8-bit registers "cr2"-"crf" follow)
+MS1, File message: "too many files"
+MSG1, F000-F0D1 file messages
+MS2, File message: "file open"
+MS3, File message: "file not open"
+MS4, File message: "file not found"
+MS5, File message: [return] + "searching "
+MS20, File message: "ing "
+MS6, File message: "for "
+MS7, File message: [return] + "press  play "
+MS8, File message: "& record "
+MS9, File message: "on tape #"
+MS10, File message: [return] + ...
+MS22, File message: "load"
+MS11, File message: [return] + "writing "
+MS21, File message: [return] + ...
+MS12, File message: "verify"
+MS13, File message: "device no present"
+MS15, File message: "not input file"
+MS16, File message: "not output file"
+MS17, File message: [return] + "found "
+MS18, File message: [return] + "ok" + [shift return]
+MS19, File message: [return] + "ready." + [shift return]
+MSG30, File message: [return] + "are you sure ?"
+MSG31, File message: [return] "? bad disk " + [return]
+TALK, SYS15 - Sent 'Talk' (to IEEE) with attention
+LISTN, (Send 'Listen' (to IEEE) with attention - uses A)
+LIST1, (Send IEEE command character)
+LIST2, x
+list4, Wait for DAV n=lo
+ISOUR, (Sent byte to IEEE) - Test channel
+ISR1, Wait for NRFD to become low
+ISR0, +
+ISR2, IEEE status
+ISR3, Set IEEE out control DAV to hi
+SECND, SYS27 - Sent secondary address with listen - uses A
+SCATN, IEEE channel test: release ATN
+ERRS3, Option: timeout or wait for IEEE response
+ERRS4, +
+ERRP0, Status="listener timeout"
+ERR01, +
+ERRP7, Print "device not present"
+ERRP1, Timeout on read, clear control lines
+ER001, +
+MSG, Print system message)-(Send canned file message)
+TKSA, SYS26 - Secondary address with talk - uses A
+TKATN, SYS29 - Release ATN after talk - uses A
+CIOUT, SYS19 - Handshake character out - uses A); (Send character to IEEE-jb)
+CI2, +
+CI4, +
+UNTLK, SYS18 - untalk: drop IEEE device - no reg. used
+UNLSN, SYS17 - Send unlisten: no registers used
+ACPTR, SYS20 - Handshake in byte (Input) from IEEE - uses A
+ACP00, Set timer 1 to max
+ACP01, Bit 6=tl int
+ACP03, Get IEEE input, invert & save on stack
+ACP05, +
+GETIN, SYS10 - Get a buffered character - uses A
+BASIN, SYS8 - Input a byte from channel - uses A
+BN10, If input device in A=screen, find line length
+BN20, If tape, set up to input characters, else IEEE
+JTG35, +
+JTGET, Tape control
+JTG10, Get byte from tape buffer
+BN30, Get ST
+BN32, +
+BN35, Jump to get IEEE input
+BSOUT, SYS9 - Output a byte to channel - uses A
+BO10, (If not IEEE)
+BO20, (Send to cassette)
+BO21, Charager to tape buffer storage
+JTP10, Get tape buffer character
+RSTOR, Put in character in second tape buffer address
+CLALL, SYS11 - abort, not close, all file - no regs. used
+CLRCH, +
+CLRCHN, SYS7 - Restore default I/O devices
+JX750, +
+JX770, Initialize I/O to default values
+JLTLK, Fine & set up file data
+JX600, +
+JZ100, Move file table entries to device, command
+JZ101, +
+CLOSE, CLOSE (logical file) instruction
+CLOS5, SYS4 - Close (logical) file # in A
+FCLOSE, +
+CLOS10, Move files from table
+JX120, +
+JX150, Recover list # & reduce open files by 1
+JX170, +
+STOP1, SYS22 - Test [stop] key - uses no registers - A=0 if stop wanted
+STOP2, +
+stop, Stop if [stop] key depr.- "stop" also a lbl. at $b7c6
+SPMSG, Send message if in direct mode
+TXTST, Test if in direct mode
+TXTRT, +
+LD15, Program LOAD subroutines
+LD20, If device#=0 or 3, print "syntax error"
+LD30, +
+LD40, Strip bit 1 from ST
+LD50, +
+LD60, +
+LD64, Test ST for end of file
+LD90, +
+LD65, Tape end address=start address
+ld100, +
+LD112, +
+LD120, Jump to "file not found"
+LD150, +
+LD170, +
+LOAD, LOAD instruction
+LD10, 0=LOAD; 1=VERIFY
+LOADNP, Transfer BASIC start/end to Tape start/end address
+LD11, Wait for key switch change
+LD209, Print "load error"
+LD210, COLD START of BASIC - Reset to start & print "ready."
+LD205, +
+LD300, Print "searching"
+LD105, Print "   file name"
+LD110, +
+LD115, +
+LD400, Print "loading" or "verifying"
+LD410, "Verify"
+PARS1, Initialize default values for I/O device
+PR060, +
+PR070, Get expression from input buffer; put in X
+OPENI, Open IEEE channel for output
+OPENIB, +
+OP37, Abort IEEE & print "device not present"
+OP35, +
+OP40, +
+OP45, +
+FAF, Find specific tape header block
+FAF20, +
+FAF30, +
+FAF40, +
+VER, VERIFY instruction
+VER10, Print "ok"
+PARS2, Get Open/Close parameters
+PR100, +
+PR111, +
+PR200, READ file name - get string
+PR140, Check for end
+PR147, +
+PR150, Check for comma ","
+PR130, +
+PR135, To "syntax error"
+OPEN, OPEN instruction: from input parameters
+OP94, SYS3 - Open logical file - uses no registers (no symb for 1.0 or 2.0)
+FOPEN, -2=Open file with preset parameters
+OP98, +
+OP100, +
+OP150, +
+OP160, Print "file not found" & then clear I/O
+ERMSG, Send error message
+OP170, Search tape for header block
+OP200, Wait for cassette record/play switch
+OP171, +
+OP172, +
+OP175, +
+FAH, Find any tape header block
+FAH30, Read data record from tape
+FAH50, +
+FAH55, +
+FAH45, +
+FAH40, Recover load/verify indicator
+TAPEH, Write tape header
+BLNK2, Fill cassette buffer with spaces
+TH20, +
+TH30, +
+LDAD2, Get start & end address from tape header for LOAD
+LDAD3, Tape buffer to pointer
+ZZZ, x
+ZZ10, +
+LDAD1, Set tape buffer start & end pointers
+SYS, SYS instruction
+SV60, Set tape write start & end
+SAVE, SAVE instruction
+SV3, Transfer BASIC start/end to tape
+SV5, Test for proper output device
+SV10, Abort IEEE, print "device not present"
+SV20, Screen the current device?
+SV30, Is current address = end address?
+SV50, Send UNLISTEN to IEEE
+CLSE1, Close IEEE channel
+SV100, +
+SV105, Write tape header
+UDTIM, Update jiffy clock (Hardware interrupt: cursor, tape & keyboard)
+UD10, +
+UD20, +
+UD30, +
+UD40, +
+UD45, +
+UD50, Zero the correction clock
+UD60, Wait till keyboard input row changes
+UD65, +
+UD70, +
+CHKIN, SYS5 - open channel for input - uses X
+JX300, Abort IEEE & print "file not open"
+JX305, +
+JX310, +
+JX320, Set input device to keyboard
+JX330, Set output from logical file number; Restore A,X,Y from stack & RTS
+JX3301, +
+JX340, +
+JX350, Check ST variable
+CHKOUT, SYS6 - open channel for output - uses X; Set output device from logical file number
+CKOUT, +
+CK10, To screen?
+JX360, Set CMD device
+JX370, Remember IEEE device #
+JX3701, Test IEEE channel
+JX380, +
+JX390, Check ST variable
+JTP20, Increment tape buffer pointer
+CSTE1, Print "press play" - Wait till cassette PLAY key hit
+CS30, +
+CS40, +
+CS10, Test cassette switch (Sense tape switch)
+CS20, Bit 1 = cassette #1 read control
+CS25, +
+CSTE2, Ask for RECORD + PLAY, wait for PLAY
+RBLK, Initiate tape read to buffer  (Read tape to buffer)
+TRD, (Read tape)
+TRD2, Toggle cassette #1 read control
+TRD3, +
+WBLK, Initiate tape write  (Write tape from buffer)
+TWRT, Checksum
+TWRT2, -2=write tape, leader length in A
+TAPE, Common tape I/O
+TP20, +
+TP30, Interblock delau loop
+TP32, +
+TP35, +
+TP40, Test, IRQ not modified
+TP50, +
+TWAIT, Test is (Wair for) I/O complete or [stop] key down
+tstop, Test stop key
+STOP3, BRK to immediate mode
+STT1, Tape bit timing adjust
+STT2, +
+STT3, +
+read, Interrupt routine for tape read - read tape bits
+RD1, +
+RADS, +
+RD3, +
+JRADJ, +
+RJDJ, +
+JRAD2, +
+SRER, +
+RADX2, +
+RADL, Right start bit/read bit sequence error
+RAD5, +
+RDBK, +
+RADP, +
+RADBK, Interrupt restore
+RAD3, +
+ROUT2, +
+ROUT1, +
+RAD3G, +
+RAD4, +
+RAD2, EOT bit recieved
+RAD2Y, +
+RAD2X, Timing constant
+RADQ, +
+RADQ1, +
+RADQ2, +
+RADK, +
+RADR1, +
+RDBK2, +
+RADJ, Read tape characters: initialize tape flags
+RD15, +
+RD12, +
+RD10, +
+RD20, +
+RD22, +
+RD200, +
+RD40, +
+RD60, +
+RD70, +
+RD80, +
+RD56, +
+RD58, +
+RD52, +
+RD55, Reacd character error
+RD59, +
+RD90, +
+RD160, End
+RD161, +
+RD167, Right leader count
+RD175, +
+RD180, Interrupt return
+RD300, Reset tape read address (Reset tape I/O pointer)
+UDST, Flag error into ST variable
+NEWCH, New character - reset counters for new byte
+WRITE, Write a bit to tape
+WRTW, +
+WRT1, +
+WRTX, +
+WRTL3, Tape write
+WRTN, Tape write interrupt
+WRTN1, x
+WRTN2, +
+WRT3, Interrupt return
+WRT2, Cycle counter=0
+WRTS, +
+WRTS1, +
+WRT61, +
+WRT6, +
+WRT7, +
+WRT4, Tape character parity
+WRTBK, +
+WRNC, +
+WREND, +
+WRTZ, IRQ entry for print
+TNIF, Terminate tape - restore interrupt vector
+STKY, Right blocks completed
+BSIV, IRQ fixer
+TNOF, Turn off both tape motors
+VPRTY, Checksum calculation
+VP10, +
+WRT62, Advance load/save pointer
+WRT64, +
+START, RESET: power-on; BASIC 1.0 diagnostics begin at $fd48
+NMI, NMI vectors through here
+BSIT, Table of interrupt vectors
+CKSUMF, Checksum for $f000 ROM
+CONCAT, Jump Table from here on: CONCAT vector
+DOPEN, DOPEN vector
+DCLOSE, DCLOSE vector
+RECORD, RECORD vector
+FORMAT, HEADER vector
+COLECT, COLLECT vector
+BACKUP, BACKUP vector
+DCOPY, DCOPY vector
+APPEND, APPEND vector
+DSAVE, DSAVE vector
+DLOAD, DLOAD vector
+DCAT, CATALOG vector
+DIRCAT, DIRECTORY vector
+RENAME, RENAME vector
+SCRATC, SCRATCH vector
+READDS, DS & DS$ vector (Get disk status)
+COPEN, OPEN vector
+CCLOS, CLOSE vector
+COIN, Set input device vector
+COOUT, Set output device vector
+CCCHN, Same
+CLSCHN, Restore normal (default) i/o devices vector
+CINCH, Input character from current input device vector
+INCHR, Same
+OUTCH, Output a character vector
+CLOAD, LOAD vector
+CSAVE, SAVE vector
+CVERF, VERIFY vector
+CSYS, SYS vector
+ISCNTC, Test stop key vector
+CGETL, GET a character from current input device
+CCALL, Abort all i/o channels vector
