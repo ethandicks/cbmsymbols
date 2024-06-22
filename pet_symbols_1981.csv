@@ -114,23 +114,23 @@ TVAR, x
 UNLSN1, x
 ERRNF, (error msg offset constant)
 USRPOK, $4C constant = JMP
-ADDPRC, USR vector - Lo/Hi
+ADDPRC, USR vector - Lo/Hi (MS additional precision const)
 BLF, (constant)
-ADDPR2, x
+ADDPR2, (constant)
 BDF, (constant)
 BUFPAG, x
 CHARAC, Starting delimiter / Search character
 INTEGR, 1 byte integer from "qint"
 STRSIZ, # locations per descriptor
-ADDPR4, (Scan between quotes flag)
+ADDPR4, (constant)
 BDFH, (constant)
 ENDCHR, Ending delimiter
-SBERR, x
+SBERR, (constant)
 EOT, (constant)
 COUNT, General counter (Input buffer pointer; # of subscripts)
 DIMFLG, Flag to remember dimensioned variables
 VALTYP, Flag for variable type: 00=numeric; ff=string
-ADDPR8, x
+ADDPR8, (constant)
 INTFLG, Flag for # type: 80=integer; 00=floating point
 LBERR, (constant)
 NCMDS, (constant)
@@ -146,7 +146,7 @@ DSDESC, ds$ length
 CHANL,  Active I/O Channel #
 CHANNL, Active I/O Channel #
 ERRSN, (error msg offset constant)
-SPERR, x
+SPERR, (constant)
 LINNUM, Line # storage Lo/Hi
 POKER,  Holds address for POKE command (Integer value for SYS & GOTO)
 FORSIZ, # of bytes used on stack for-next
@@ -154,18 +154,18 @@ TEMPPT, index to next available descriptor
 LASTPT, Pointer to last $ temp (Pointers for descriptor search)
 ERRRG, (error msg offset constant)
 TEMPST, Storage for numtp temp descriptors
-NUMLEV, # of GOSUB levels allowed
-NCMPOS, x
+NUMLEV, # of GOSUB levels allowed (const)
+NCMPOS, (constant)
 INDEX,  Indirect index #1 - Lo/Hi
 INDEX1, Indirect index #1 - Lo/Hi
-CKERR, x
+CKERR, (constant)
 INDEX2, Indirect index #2 - Lo/Hi
 RESHO,  Res - register (Product area for multiplication - 5 bytes)
 RESMOH, x
 ADDEND, Temp used by "umult"
 RESMO, x
 RESLO, x
-LINLEN, x
+LINLEN, Line length (constant)
 TXTTAB, Pointer to start of BASIC text - Lo/Hi
 ERROD, (error msg offset constant)
 VARTAB, Pointer to start of variables - Lo/Hi
@@ -181,15 +181,15 @@ OLDTXT, Old txtptr (for CONT) & temp storage - Lo/Hi
 DATLIN, Current data line # (in case of errors) - Lo/Hi
 DATPTR, Data statement pointer - Lo/Hi
 INPPTR, Source pf input address - Lo/Hi
-APEN, x
+APEN, (constant)
 VARNAM, Current variable name - 2 byte
 FDECPT, Pointer into powers of 10 for "fout"
 VARPNT, Pointer into variable in memory - Lo/Hi
 ERROV, (error msg offset constant)
-ANDMSK, x
+ANDMSK, AND mask for WAIT instruction
 FORPNT, Pointer into current FOR-NEXT variable reference - Lo/Hi
 LSTPNT, Pointer to list $ - Lo/Hi
-EORMSK, x
+EORMSK, EOR mask for WAIT instruction
 OPPTR, Pointer to current operator in table - Lo/Hi
 VARTXT, Pointer into list of variables - Lo/Hi
 OPMASK, Mask created by current operator (Comparison symbol accumulator)
@@ -199,8 +199,8 @@ TEMPF3, A third FAC temporary - 4 bytes (misc work area - 6 bytes)
 DSCPNT, Pointer to a string description
 ERROM, (error msg offset constant)
 FOUR6, Variable constant used by garbage collection
-BUFLEN, x
-JMPER, 4c = JMP: subroutine for dispatch of functiond
+BUFLEN, (input buffer length constant)
+JMPER, 4c = JMP: subroutine for dispatch of functions
 SIZE, address for dispatch of functions - Lo/Hi
 OLDOV, The old overflow
 TEMPF1, A FAC temp - 4 bytes (misc numeric work area - 10 bytes)
@@ -215,7 +215,7 @@ TENEXP, Base 10 exponent for "fin" & "fout"
 DPTFLG, Flag if a decimal point has been input
 GRBTOP, Pointer used in garbage collection
 LOWTR, Last thing to move in blt.
-EPSGN, x
+EPSGN, Sign of base 10 exponent
 EXPSGN, Sign of base 10 exponent
 DSCTMP, This is where temp descs are built
 FAC, Main floating-point accumulator (Mantissa - 5 bytes)
@@ -248,7 +248,7 @@ CHRGET, Subroutine - gets next character from BASIC text (23 bytes)
 CHRGOT, Subroutine - regets current character from B. text
 TXTPTR, Pointer to current BASIC source text - Lo/Hi
 ERRDD, (error msg offset constant)
-QNUM, x
+QNUM, Check and evaluate numeric char (inside CHRGET)
 ENDTK, (BASIC token constant)
 FORTK, (BASIC token constant)
 DATATK, (BASIC token constant)
@@ -265,7 +265,7 @@ ONTK, (BASIC token constant)
 CBINV, BRK interrupt vector - Lo/Hi
 NMINV, NMI interrupt vector - Lo/Hi
 ERRID, (error msg offset constant)
-CSTAT, x
+CSTAT, Variable ST - I/O Status byte
 SATUS, Variable ST - I/O Status byte
 LSTX, Which key down; 255=none
 SFST, Shift key: 1 if depressed
@@ -311,7 +311,7 @@ DPSW, (Byte received flag)
 EQULTK, (BASIC token constant)
 LESSTK, (BASIC token constant)
 WSW, (Logical Address temporary save)
-ONEFUN, x
+ONEFUN, (constant)
 SAVX, Place to save X
 T1, (Tape buffer character; Monitor command)
 RCNT, (Temporary counter - File name pointer)
@@ -336,8 +336,8 @@ SHCNH, Write leader length; read checksum
 PNT, Pointer to screen line address - Lo
 POINT, Pointer to screen line address - Hi
 PNTR, Column of cursor on screen line
-TRMPOS, x
-LASNUM, x
+TRMPOS, Column of cursor on screen line
+LASNUM, Number of last function that takes one arg (const)
 SAL, Start address Lo - pointer: tape, scroll
 ERRST, (error msg offset constant)
 SAH, Start address Hi - pointer: tape, scroll
