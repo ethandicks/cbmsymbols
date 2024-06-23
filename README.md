@@ -28,6 +28,10 @@ Combine the BASIC and KERNAL (and EDIT ROM) listings for three versions of PETs 
 $ cat BASIC_PET_V1_REC.lst KERNAL_PET_1.0_REC.lst >PET1.txt
 $ cat BASIC_PET_V2_REC.lst KERNAL_PET_2.0_REC.lst >PET2.txt
 $ cat BASIC_PET_V4_REC.lst KERNAL_PET_4.0_REC.lst >PET4.txt
+$ cat BASIC_VIC.lst KERNAL_VIC_04.lst >VIC20.lst
+$ cat BASIC_C64.lst KERNAL_C64_01.lst >C64-01.txt
+$ cat BASIC_C64.lst KERNAL_C64_02.lst >C64-02.txt
+$ cat BASIC_C64.lst KERNAL_C64_03.lst >C64-03.txt
 ```
 
 Then to produce a memory map of all three versions and to sort the symbols in preference of BASIC 4.0, then Original BASIC, then Upgrade BASIC:
