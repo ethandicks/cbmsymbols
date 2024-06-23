@@ -26,67 +26,67 @@ KUDTIM, x
 L00, x
 L02, x
 L026A, x
-LC9D8, x
-LCA5A, x
-LCA64, x
-LCE3B, x
-LCE69, x
-LD657, x
-LE082, x
-LE1AA, x
-LE1C9, x
-LE1CE, x
-LE1D8, x
-LE1F0, x
-LE241, x
-LE273, x
-LE275, x
-LE6AC, x
-LE6AD, x
-LE73F, x
-LE7F3, x
-LF253, x
-LF2EA, x
-LF304, x
-LF3CC, x
-LF53B, x
-LF5E3, x
-LF5E7, x
-LF71C, x
-LF720, x
-LF724, x
-LF735, x
-LF9CA, x
-LFD48, x
-LFD4E, x
-LFD54, x
-LFD65, x
-LFD6D, x
-LFD9B, x
-LFDB3, x
-LFE0D, x
-LFE18, x
-LFE2A, x
-LFE2D, x
-LFE44, x
-LFE51, x
-LFEAE, x
-LFEB3, x
-LFEB8, x
-LFEC3, x
-LFEC5, x
-LFECA, x
-LFECF, x
-LFED9, x
-LFEE1, x
-LFEE6, x
-LFEEB, x
-LFEF0, x
-LFEFF, x
-LFF1B, x
-LFF24, x
-LFF45, x
-LFF9E, x
+LC9D8, (local symbol)
+LCA5A, (local symbol)
+LCA64, (local symbol)
+LCE3B, (local symbol)
+LCE69, (local symbol)
+LD657, (local symbol)
+LE082, (local symbol)
+LE1AA, (local symbol)
+LE1C9, (local symbol)
+LE1CE, (local symbol)
+LE1D8, (local symbol)
+LE1F0, (local symbol)
+LE241, (local symbol)
+LE273, (local symbol)
+LE275, (local symbol)
+LE6AC, (local symbol)
+LE6AD, (local symbol)
+LE73F, (local symbol)
+LE7F3, (local symbol)
+LF253, (local symbol)
+LF2EA, (local symbol)
+LF304, (local symbol)
+LF3CC, (local symbol)
+LF53B, (local symbol)
+LF5E3, (local symbol)
+LF5E7, (local symbol)
+LF71C, (local symbol)
+LF720, (local symbol)
+LF724, (local symbol)
+LF735, (local symbol)
+LF9CA, (local symbol)
+LFD48, (local symbol)
+LFD4E, (local symbol)
+LFD54, (local symbol)
+LFD65, (local symbol)
+LFD6D, (local symbol)
+LFD9B, (local symbol)
+LFDB3, (local symbol)
+LFE0D, (local symbol)
+LFE18, (local symbol)
+LFE2A, (local symbol)
+LFE2D, (local symbol)
+LFE44, (local symbol)
+LFE51, (local symbol)
+LFEAE, (local symbol)
+LFEB3, (local symbol)
+LFEB8, (local symbol)
+LFEC3, (local symbol)
+LFEC5, (local symbol)
+LFECA, (local symbol)
+LFECF, (local symbol)
+LFED9, (local symbol)
+LFEE1, (local symbol)
+LFEE6, (local symbol)
+LFEEB, (local symbol)
+LFEF0, (local symbol)
+LFEFF, (local symbol)
+LFF1B, (local symbol)
+LFF24, (local symbol)
+LFF45, (local symbol)
+LFF9E, (local symbol)
 LINLIN, x
 LINWID, x
 MRCHKR, x
@@ -509,7 +509,7 @@ LIST, LIST instruction
 GOLST, (Convert char. $ to # in 11-12)
 LSTEND, +
 TSTDUN, (done?)
-TYPLIN, (Print the integer in A;X)
+TYPLIN, (Print the integer in A,X)
 PRIT4, +
 PLOOP, (Print character in A)
 PLOOP1, +
