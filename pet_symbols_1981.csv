@@ -315,9 +315,9 @@ ONEFUN, (constant)
 SAVX, Place to save X
 T1, (Tape buffer character; Monitor command)
 RCNT, (Temporary counter - File name pointer)
-T2, x
+T2, Temporary 2
 TMPC, x
-T3, x
+T3, Temporary 3
 TMPC2, x
 PCNTR, Serial bit count
 PTCH, x
@@ -1824,7 +1824,7 @@ TP32, +
 TP35, +
 TP40, Test, IRQ not modified
 TP50, +
-TWAIT, Test is (Wair for) I/O complete or [stop] key down
+TWAIT, Test is (Wait for) I/O complete or [stop] key down
 tstop, Test stop key
 STOP3, BRK to immediate mode
 STT1, Tape bit timing adjust
@@ -1872,7 +1872,7 @@ RD80, +
 RD56, +
 RD58, +
 RD52, +
-RD55, Reacd character error
+RD55, Read character error
 RD59, +
 RD90, +
 RD160, End
