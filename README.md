@@ -61,7 +61,7 @@ CCALL     $FFE7   $FFE7   $FFE7
 
 ## Additional example:
 
-Expanding on the original example, adding VIC-20 and Commodore 64 symbols and a comments field, start by generating the additional listing files.  There are three major versions of C64 KERNAL ROMs so the entire range is:
+Expanding on the original example, to add VIC-20 and Commodore 64 symbols and a comments field, start by generating the additional listing files.  There are three major versions of C64 KERNAL ROMs so the entire range is:
 
 ```
 $ cat BASIC_VIC.lst KERNAL_VIC_04.lst >VIC20.lst
