@@ -28,10 +28,6 @@ Combine the BASIC and KERNAL (and EDIT ROM) listings for three versions of PETs 
 $ cat BASIC_PET_V1_REC.lst KERNAL_PET_1.0_REC.lst >PET1.txt
 $ cat BASIC_PET_V2_REC.lst KERNAL_PET_2.0_REC.lst >PET2.txt
 $ cat BASIC_PET_V4_REC.lst KERNAL_PET_4.0_REC.lst >PET4.txt
-$ cat BASIC_VIC.lst KERNAL_VIC_04.lst >VIC20.lst
-$ cat BASIC_C64.lst KERNAL_C64_01.lst >C64-01.txt
-$ cat BASIC_C64.lst KERNAL_C64_02.lst >C64-02.txt
-$ cat BASIC_C64.lst KERNAL_C64_03.lst >C64-03.txt
 ```
 
 Then to produce a memory map of all three versions and to sort the symbols in preference of BASIC 4.0, then Original BASIC, then Upgrade BASIC:
@@ -63,6 +59,38 @@ BUFPAG     ----   $0002   $0002
 ISCNTC    $FFE1   $FFE1   $FFE1
 CGETL     $FFE4   $FFE4   $FFE4
 CCALL     $FFE7   $FFE7   $FFE7
-
 ```
 
+## Additional example:
+
+Expanding on the original example, adding VIC-20 and Commodore 64 symbols and a comments field, start by generating the additional listing files.  There are three major versions of C64 KERNAL ROMs so the entire range is:
+
+```
+$ cat BASIC_VIC.lst KERNAL_VIC_04.lst >VIC20.lst
+$ cat BASIC_C64.lst KERNAL_C64_01.lst >C64-01.txt
+$ cat BASIC_C64.lst KERNAL_C64_02.lst >C64-02.txt
+$ cat BASIC_C64.lst KERNAL_C64_03.lst >C64-03.txt
+```
+
+On top of the extra two address columns, one can find or generate a CSV file with a label and a comment.  Because existing comments files are not well formed, mkmmap splits the comments CSV on the first comma only and does not require the text field to be wrapped in quotes, even if it contains commas.
+
+### Sample symbol CSV file
+```
+STXTPT, "txtptr"="txttab"-1
+LIST, LIST instruction
+GOLST, (Convert char. $ to # in 11-12)
+LSTEND, +
+TSTDUN, (done?)
+TYPLIN, (Print the integer in A,X)
+PRIT4, +
+PLOOP, (Print character in A)
+PLOOP1, +
+GRODY, (Jump to "ready")
+QPLOP, +
+```
+
+The historic comments from 1981 are somewhat stylistically inconsistent.  Some edits have been made but in the future, a nice, clean, edited copy would be nice.  In addition to meaningful text contents, the original comments used "+" as a continuation character from the previous comment in blocks of code where there aren't specific callable entry-points.  To that, the use of "x" is something of a visible place-holder, for symbols that never had a comment in the 1981 list, or ones that slipped through the cracks when processing the files for this repo.  Some comments are new and are intended to be used to filter out lines that are largely uninformative such as constants defined in the original source code that do not correspond to items in the memory map, or local symbols that exist in the code but are not helpful to be highlighted.
+
+One unimplemented feature in the 1981 list is multi-line comments. Presently, all output lines begin with a symbol.
+
+Also, as part of the disambiguation mechanism for symbols that appear twice (in the BASIC listing and in the KERNEL listing), some symbols are printed out in lower case.  The second appearance must be in lower case in the symbol CSV file to line up the correct values, but an upcoming feature will be to output all symbols in upper case regardless of how they appear in the symbol CSV file.
