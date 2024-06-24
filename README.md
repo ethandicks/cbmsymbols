@@ -1,4 +1,4 @@
-# cbmsymbol
+# cbmsymbols
 
 There have been lists and lists of common ROM entry points and zero page locations for Commodore 8-bit computers going back to the first major PET ROM revision in 1979.  These lists were first published in newsletters then books then much, much later, on the Web.  In order to complete a different project of mine, I needed a fairly extensive list of BASIC and Kernal entry points spanning original PET BASIC through at least the Commodore 64. To build the list I needed, it seemed most expedient to use the listing files from the cbmsrc project.
 
