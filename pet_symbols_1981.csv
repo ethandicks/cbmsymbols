@@ -32,7 +32,7 @@ LCA64, (local symbol)
 LCE3B, (local symbol)
 LCE69, (local symbol)
 LD657, (local symbol)
-LE082, (local symbol)
+LE082, Encoded WAIT6502 Easter Egg string ("!TFOSORCIM")
 LE1AA, (local symbol)
 LE1C9, (local symbol)
 LE1CE, (local symbol)
@@ -89,8 +89,8 @@ LFF45, (local symbol)
 LFF9E, (local symbol)
 LINLIN, x
 LINWID, x
-MRCHKR, x
-MRCHR, x
+MRCHKR, Microsoft WAIT6502 Easter Egg outer loop
+MRCHR, Microsoft WAIT6502 Easter Egg inner loop
 NCMWFL, x
 NULCNT, x
 NULL, x
@@ -101,11 +101,11 @@ PATCH3, x
 PATCH4, x
 PATCH6, x
 PATCH7, x
-PKINC, x
+PKINC, +
 PRTNUL, x
 RESPUL, x
 SNERRX, x
-STORD1, x
+STORD1, Microsoft WAIT6502 Easter Egg routine
 SVAR, x
 SVARGO, x
 SVARS, x
@@ -135,7 +135,7 @@ INTFLG, Flag for # type: 80=integer; 00=floating point
 LBERR, (constant)
 NCMDS, (constant)
 DORES, Flag whether can crunch reserved words
-GARBFL, x
+GARBFL, Garbage collection flag ($80=already happened)
 CLMWID, Size of print window (constant)
 SUBFLG, Flag which allows subscripts in syntax (FNX flag)
 INPFLG, Flags input or read (00=INPUT; 40=GET; 98=READ)
