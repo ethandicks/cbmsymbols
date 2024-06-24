@@ -115,18 +115,18 @@ UNLSN1, x
 ERRNF, (error msg offset constant)
 USRPOK, $4C constant = JMP
 ADDPRC, USR vector - Lo/Hi (MS additional precision const)
-BLF, (constant)
+BLF, BASIC Load File block type (constant)
 ADDPR2, (constant)
-BDF, (constant)
+BDF, BASIC Data File block type (constant)
 BUFPAG, x
 CHARAC, Starting delimiter / Search character
 INTEGR, 1 byte integer from "qint"
 STRSIZ, # locations per descriptor
 ADDPR4, (constant)
-BDFH, (constant)
+BDFH, BASIC Data File Header block type (constant)
 ENDCHR, Ending delimiter
 SBERR, (constant)
-EOT, (constant)
+EOT, End Of Tape block type (constant)
 COUNT, General counter (Input buffer pointer; # of subscripts)
 DIMFLG, Flag to remember dimensioned variables
 VALTYP, Flag for variable type: 00=numeric; ff=string
