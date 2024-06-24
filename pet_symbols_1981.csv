@@ -136,7 +136,7 @@ LBERR, (constant)
 NCMDS, (constant)
 DORES, Flag whether can crunch reserved words
 GARBFL, x
-CLMWID, Size of print window
+CLMWID, Size of print window (constant)
 SUBFLG, Flag which allows subscripts in syntax (FNX flag)
 INPFLG, Flags input or read (00=INPUT; 40=GET; 98=READ)
 DOMASK, Mask used by relation operations (Comparison Evaluation Flag)
@@ -403,10 +403,10 @@ LAT, File logical adress table - 10 bytes
 FAT, File first address table - 10 bytes
 SAT, File secondary address table - 10 bytes
 KEYD, Keyboard input buffer - 10 bytes
-TAPE1, Tape#1 input buffer - xx bytes
+TAPE1, Tape#1 input buffer - 192 bytes
 FNLEN2, DOS character pointer
 POS, x
-TAPE2, Tape#2 input buffer - xx bytes
+TAPE2, Tape#2 input buffer - 192 bytes
 DRIVE1, DOS drive 1 flag
 DRIVE2, DOS drive 2 flag
 DIDCHK, x
