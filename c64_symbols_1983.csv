@@ -1,0 +1,664 @@
+Q, x
+PLF, x
+PX4, x
+CK5, x
+BMT2, x
+GN20, x
+BN33, x
+UD80, x
+UD90, x
+STT4, x
+size, x
+BLUE, blue color value (constant)
+LLEN, x
+CBIT, x
+R2D2, Flag: EOI output byte switch (00=send byte immediately; 80=do EOI delay first)
+USER, Pointer to address of current color RAM location
+XMAX, Maximum keyboard buffer size (0-15)
+MODE, Flag: enable or disable changing character sets with SHIFT/Logo keypress
+D1SR, 6522 VIA #1 Shift Register
+COLM, keyboard matrix column I/O register
+ROWS, keyboard matrix row I/O register
+D2SR, 6522 VIA #2 Shift Register
+PLSV, x
+PAOC, x
+KSP2, x
+KSP3, x
+KSP4, x
+plot, x
+STOK, x
+VPAN, x
+FINX, x
+NJT8, x
+NJT9, x
+BK15, x
+UHUH, x
+JPL2, x
+SCCL, x
+JPL5, x
+BACK, x
+BMT1, x
+LOCK, x
+TVIC, x
+W1MS, x
+GN10, x
+BN31, x
+BN50, x
+BN52, x
+BO50, x
+CK20, x
+CK15, x
+CK30, x
+CK40, x
+CK50, x
+CK60, x
+OP50, x
+LD25, x
+LD45, x
+SV25, x
+SV40, x
+TH40, x
+TNIQ, x
+INCR, x
+NNMI, x
+TIMB, x
+PLOT, x
+PABBO, x
+PCTH0, x
+PCTH1, x
+D6510, 6510 on-chip I/O Data Direction Register
+R6510, 6510 on-chip I/O Port
+TIMRB, 6526 CIA enable-one-shot value for Control Register B (constant)
+ENABL, RS-232 interrupts enabled
+D1PRA, 6526 CIA #1 Peripheral Data Register A
+D1PRB, 6526 CIA #1 Peripheral Data Register B
+D1SDR, 6526 CIA #1 Serial Data Register
+D1ICR, 6526 CIA #1 Interrupt Control Register
+D1CRA, 6526 CIA #1 Control Register A
+D1CRB, 6526 CIA #1 Control Register B
+D2PRA, 6526 CIA #2 Peripheral Data Register A
+D2PRB, 6526 CIA #2 Peripheral Register B
+D2SDR, 6526 CIA #2 Serial Data Register
+D2ICR, 6526 CIA #2 Interrupt Control Register
+D2CRA, 6526 CIA #2 Control Register A
+D2CRB, 6526 CIA #2 Control Register B
+CLD55, x
+PPACH, x
+PRTYP, x
+SCN22, x
+ULSET, x
+LEXIT, x
+RSTOA, x
+JX117, x
+JX175, x
+FAH56, x
+RADKX, x
+IO010, x
+IO020, x
+T2NMI, x
+FLNMI, x
+POPEN, x
+PCINT, x
+P0010, x
+WHITE, White color value (constant)
+NWRAP, Max number of physical lines per logical line (constant)
+ERVFY, x
+ERBRK, x
+LLEN2, x
+verck, Flag: LOAD or VERIFY
+INBIT, RS-232: Input bits/Cassette temporary storage area
+BITCI, RS-232: Input bit count/Cassette temporary storage
+BITTS, RS-232: Output bit count/Cassette temporary storage
+RIBUF, RS-232: Pointer to input buffer
+ROBUF, RS-232: Pointer to output buffer
+COLOR, Current foreground color for text
+GDCOL, Color of character under cursor
+KOUNT, Counter for timing delay between key repeats
+DELAY, Counter for timing delay until first key repeat begins
+RIDBE, RS-232: index to end of receive buffer
+RIDBS, RS-232: index to start of receive buffer
+RODBS, RS-232: index to start of transmit buffer
+RODBE, RS-232: index to end of transmit buffer
+IMAIN, Indirect MAIN (system direct loop)
+IGONE, Indirect GONE (char dispatch)
+IEVAL, Indirect EVAL (symbol evaluation)
+SAREG, SYS .A reg
+SXREG, SYS .X reg
+SYREG, SYS .Y reg
+SPREG, SYS .P reg
+IOPEN, Vector to Kernal OPEN routine ($F34A)
+ISTOP, Vector to Kernal STOP routine ($F6ED)
+ILOAD, Vector to Kernal LOAD routine ($F49E)
+ISAVE, Vector to Kernal SAVE routine ($F5DD)
+LINZ0, Address of screen line 1 for lo byte table
+LINZ1, Address of screen line 2 for lo byte table
+LINZ2, Address of screen line 3 for lo byte table
+LINZ3, Address of screen line 4 for lo byte table
+LINZ4, Address of screen line 5 for lo byte table
+LINZ5, Address of screen line 6 for lo byte table
+LINZ6, Address of screen line 7 for lo byte table
+LINZ7, Address of screen line 8 for lo byte table
+LINZ8, Address of screen line 9 for lo byte table
+LINZ9, Address of screen line 10 for lo byte table
+SIXTY, x
+D1ORB, 6522 VIA #1 Port B register
+D1T1L, 6522 VIA/6526 CIA #1 Timer 1 Lo
+D1T1H, 6522 VIA/6526 CIA #1 Timer 1 Hi
+D1T2L, 6522 VIA/6526 CIA #1 Timer 2 Lo
+D1T2H, 6522 VIA/6526 CIA #1 Timer 2 Hi
+D1ACR, 6522 VIA #1 Auxilliary Control Register
+D1PCR, 6522 VIA #1 Peripheral Control Register
+D1IFR, 6522 VIA #1 Interrupt Flag Register
+D1IER, 6522 VIA #1 Interrupt Enable Register
+D1ORA, 6522 VIA #1 Port A register
+D2ORB, 6522 VIA #2 Port B register
+D2T1L, 6522 VIA/6526 CIA #2 Timer 1 Lo
+D2T1H, 6522 VIA/6526 CIA #2 Timer 1 Hi
+D2T2L, 6522 VIA/6526 CIA #2 Timer 2 Lo
+D2T2H, 6522 VIA/6526 CIA #2 Timer 2 Hi
+D2ACR, 6522 VIA #2 Auxilliary Control Register
+D2PCR, 6522 VIA #2 Peripheral Control Register
+D2IFR, 6522 VIA #2 Interrupt Flag Register
+D2IER, 6522 VIA #2 Interrupt Enable Register
+D2ORA, 6522 VIA #2 Port A register
+ERR02, x
+ERR03, x
+ERR04, x
+ERR05, x
+ERR06, x
+ERR07, x
+ERR08, x
+ERR09, x
+ERR10, x
+ERR11, x
+ERR12, x
+ERR13, x
+ERR14, x
+ERR15, x
+ERR16, x
+ERR17, x
+ERR18, x
+ERR19, x
+ERR20, x
+ERR21, x
+ERR22, x
+ERR23, x
+ERR24, x
+ERR25, x
+ERR26, x
+ERR27, x
+ERR28, x
+ERR29, x
+OKMSG, x
+ERR30, x
+NMAIN, x
+NGONE, x
+NEVAL, x
+CLD10, x
+CLD20, x
+CLD50, x
+CLD60, x
+CLD70, x
+PLSV7, x
+PAOCX, x
+PAOC5, x
+PAOC7, x
+BVTRS, x
+INITV, x
+PANIC, x
+CHKE0, x
+PLINK, x
+panic, x
+initv, x
+COLR1, x
+NXTXA, x
+CHK1A, x
+CHK1B, x
+UNKAT, x
+SCRO0, x
+SCR10, x
+SCR41, x
+SCD10, x
+SCR40, x
+SCD20, x
+CLRLN, x
+CLR10, x
+DSPP2, x
+REPDO, x
+SCN20, x
+SCN30, x
+SPCK2, x
+REKEY, x
+RPT10, x
+RPT20, x
+RPT40, x
+CKIT2, x
+CKIT3, x
+NCTRL, x
+MODE1, x
+MODE2, x
+MODE3, x
+LOWER, x
+UPPER, x
+LIST5, x
+ISR02, x
+ISR03, x
+NOEOI, x
+ISR01, x
+ISRHI, x
+ISR04, x
+NODEV, x
+ACP04, x
+CLKHI, x
+CLKLO, x
+W1MS1, x
+RSPNO, x
+RS232, x
+RSPOK, x
+MSG10, x
+GN232, x
+JTG36, x
+JTG37, x
+JX315, x
+JX050, x
+JX115, x
+JXRMV, x
+NOPEN, x
+OP110, x
+OP152, x
+OP155, x
+OP180, x
+NLOAD, x
+LD102, x
+LD104, x
+LD177, x
+LD178, x
+LD179, x
+LD180, x
+LD190, x
+OUTFN, x
+NSAVE, x
+BREAK, x
+CLSEI, x
+SV102, x
+SV106, x
+SV110, x
+SV115, x
+rdtim, x
+NSTOP, x
+TWRT3, x
+STOP4, x
+A0INT, x
+A0IN1, x
+A0IN2, x
+NOMEM, x
+BAUDO, x
+RDTIM, x
+JPLOT, x
+RDBAS, x
+DIRCAT, x
+patch2, x
+PATCHG, x
+PATCHH, x
+PATCHI, x
+PTHRTI, x
+BLANK0, x
+CASTON, Indicator of CIA #1 Control Register B activity during cassette I/O
+KIKA26, Save area for CIA #1 Interrupt Control Register during cassette read
+STUPID, Save area for CIA #1 Control Register A during cassette read
+PALNTS, PAL/NTSC flag
+LINZ23, Address of screen line 23 for lo byte table
+LINZ24, Address of screen line 24 for lo byte table
+SIXTYP, x
+NERROX, x
+READYX, x
+CKSMA0, $A000 8K ROM checksum adj
+STOLDX, x
+SIDREG, SID chip registers
+D1TOD1, 6526 CIA #1 Time of Day (TOD) 10ths of Seconds register
+D1TODS, 6526 CIA #1 Time of Day (TOD) Seconds register
+D1TODM, 6526 CIA #1 Time of Day (TOD) Minutes register
+D1TODH, 6526 CIA #1 Time of Day (TOD) Hours register
+D2TOD1, 6526 CIA #2 Time of Day (TOD) 10ths of Seconds register
+D2TODS, 6526 CIA #2 Time of Day (TOD) Seconds register
+D2TODM, 6526 CIA #2 Time of Day (TOD) Minutes register
+D2TODH, 6526 CIA #2 Time of Day (TOD) Hours register
+NREADY, x
+PPACH0, x
+CPATCH, x
+FPATCH, x
+FPAT00, x
+FPAT01, x
+BAUDOP, x
+FINPUT, x
+FINPUX, x
+PULIND, x
+OENABL, x
+BSOBAD, x
+BSO120, x
+CKI110, x
+OPN026, x
+OPN027, x
+OPN028, x
+CLN232, x
+CUNLSN, x
+NNMI22, x
+NNMI25, x
+SIMIRQ, x
+PIOKEY, x
+ADRAY1, Vector: routine to convert Floating Point to Signed Integer (not used)
+ADRAY2, Vector: routine to convert Integer to Floating Point (not used)
+NLINES, Numoer of rows on screen (constant)
+ERLOAD, x
+MAXCHR, x
+STRNGI, x
+STATUS, x
+MSGFLG, Flag: Kernal Message Control
+BSOUR1, Temp used by serial routine
+RINONE, RS-232 Flag: Check for start bit 
+RIDATA, RS-232: Input byte buffer/Cassette temporary storage
+RIPRTY, RS-232: Input parity/Cassette leader counter
+NXTBIT, x
+RODATA, x
+ROPRTY, RS-232: Output parity/Cassette temporary storage
+MEMUSS, x
+LINTMP, x
+KEYTAB, Vector: Keyboard Decode Table
+FREKZP, Four free bytes of Zero Page for user programs
+BASZPT, Floating point to ASCII conversion temporary data
+MEMSTR, x
+memsiz, x
+TIMOUT, Flag: Kernal variable for IEEE time-out
+HIBASE, High byte of pointer to screen memory
+RPTFLG, Flag: which keys repeat (80=all keys; 01=none; 00=cursor/ins/del/space)
+SHFLAG, Flag: SHIFT/CTRL/Logo keypress
+LSTSHF, Last pattern of SHIFT/CTRL/Logo keypress
+KEYLOG, Vector to keyboard table setup routine
+AUTODN, Flag: screen scrolling enabled
+M51CTR, RS-232: mock 6551 Control Register
+M51CDR, RS-232: mock 6551 Command Register
+M51AJB, RS-232: nonstandard bit timing
+RSSTAT, RS-232: mock 6551 Status Register
+BITNUM, RS-232: number of bits left to be sent/received
+BAUDOF, RS-232: time required to send a bit
+IRQTMP, Save area fr IRQ vector during cassette I/O
+IERROR, Indirect error (output error in .X)
+ICRNCH, Indirect error (system direct loop)
+IQPLOP, Indirect LIST (char list)
+ICLOSE, x
+ICHKIN, x
+ICKOUT, x
+ICLRCH, x
+IBASIN, x
+IBSOUT, x
+IGETIN, x
+ICLALL, x
+TBUFFR, x
+VICSCN, x
+LINZ10, Address of screen line 11 for lo byte table
+LINZ11, Address of screen line 12 for lo byte table
+LINZ12, Address of screen line 13 for lo byte table
+LINZ13, Address of screen line 14 for lo byte table
+LINZ14, Address of screen line 15 for lo byte table
+LINZ15, Address of screen line 16 for lo byte table
+LINZ16, Address of screen line 17 for lo byte table
+LINZ17, Address of screen line 18 for lo byte table
+LINZ18, Address of screen line 19 for lo byte table
+LINZ19, Address of screen line 20 for lo byte table
+LINZ20, Address of screen line 21 for lo byte table
+LINZ21, Address of screen line 22 for lo byte table
+LINZ22, Address of screen line 23 for lo byte table
+VICREG, VIC chip registers
+D1ORAH, 6522 VIA #1 Port A register (w/handshake)
+D1DDRB, 6522 VIA/6526 CIA #1 Port B Data Direction Register
+D1DDRA, 6522 VIA/6526 CIA #1 Port A Data Direction Register
+D1T1LL, 6522 VIA #1 Timer 1 Write Latch/Read Counter
+D1T1LH, 6522 VIA #1 Timer 1 Trigger/Transfer
+D2ORAH, 6522 VIA #2 Port A register (w/handshake)
+D2DDRB, 6522 VIA/6526 CIA #2 Port B Data Direction Register
+D2DDRA, 6522 VIA/6526 CIA #2 Port A Data Direction Register
+D2T1LL, 6522 VIA #2 Timer 1 Write Latch/Read Counter
+D2T1LH, 6522 VIA #2 Timer 1 Trigger/Transfer
+VICCOL, VIC chip color RAM
+NERROR, x
+NCRNCH, x
+CLEART, x
+NQPLOP, x
+NGONE1, x
+TSTROM, x
+TSTR10, x
+FLPINT, x
+CKSMC0, $C000 8K ROM checksum adj
+PATCHS, x
+EREXIT, x
+EREXIX, x
+EREXIY, x
+CSYSRZ, x
+JERXIT, x
+PAOC20, x
+PAOC30, x
+PAOC32, x
+PAOC40, x
+PAOC15, x
+INITCZ, x
+INITMS, x
+INITV1, x
+DATAHI, x
+DATALO, x
+DEBPIA, x
+STPTCH, x
+ITSSET, x
+IOBASE, x
+SCRORG, x
+PLOT10, x
+NOHALF, x
+CLEAR1, x
+FNDSTR, x
+FNDEND, x
+STDONE, x
+NOTONE, x
+WLOGIC, x
+WLOG20, x
+WLOG30, x
+PATOUT, x
+FINDST, x
+WLOG10, x
+WLGRTS, x
+BAK1UP, x
+CURS10, x
+GOTDWN, x
+KEEPIT, x
+INSEXT, x
+UPALIN, x
+BAKBAK, x
+CHKBAK, x
+CHKLUP, x
+CHKDWN, x
+DWNCHK, x
+DNLINE, x
+DWNBYE, x
+CHKCOL, x
+COLTAB, x
+NEWLIN, x
+SCRD21, x
+SCRD19, x
+SCRD22, x
+SCRLIN, x
+TOFROM, x
+SETPNT, x
+SCOLOR, x
+KPREND, x
+SCNKEY, x
+SCNOUT, x
+PUTQUE, x
+SCNRTS, x
+SHFLOG, x
+SWITCH, x
+KEYLG2, x
+NOTKAT, x
+SHFOUT, x
+KEYCOD, x
+CCTTA2, x
+OUTHRE, x
+UNLOCK, x
+PATCHX, x
+CCTTA3, x
+CONTRL, x
+ISOURA, x
+ISRCLK, x
+FRMERR, x
+CSBERR, x
+TKATN1, x
+DLABYE, x
+DLADLH, x
+DLAD00, x
+ACP00A, x
+EOIACP, x
+ACP00B, x
+ACP00C, x
+ACP03A, x
+AROUND, x
+RSTRAB, x
+RST005, x
+RSTEXT, x
+RST010, x
+RSWEXT, x
+RSPEXT, x
+RST030, x
+RST040, x
+RST050, x
+RSTBGN, x
+RST060, x
+RST070, x
+RST080, x
+DSRERR, x
+CTSERR, x
+RSODNE, x
+BITCNT, x
+BIT010, x
+BIT020, x
+RSRCVR, x
+RSREXT, x
+RSR018, x
+RSR020, x
+RSRABL, x
+RSRSXT, x
+RSRTRT, x
+RSR030, x
+RSR031, x
+RSR032, x
+RSR050, x
+RECERR, x
+BREAKE, x
+FRAMEE, x
+ERR232, x
+RSR060, x
+CKO232, x
+CKO020, x
+CKO030, x
+CKO040, x
+CKDSRX, x
+CKO100, x
+BSO232, x
+BSO100, x
+BSO110, x
+CKI232, x
+CKI010, x
+CKI020, x
+CKI080, x
+CKI090, x
+CKI100, x
+BSI232, x
+BSI010, x
+RSP232, x
+RSPOFF, x
+NGETIN, x
+NBASIN, x
+NBSOUT, x
+CASOUT, x
+RSTOR1, x
+NCHKIN, x
+NCKOUT, x
+NCLOSE, x
+CLS010, x
+CLS020, x
+LOOKUP, x
+NCLALL, x
+NCLRCH, x
+CLALL2, x
+OPN232, x
+OPN020, x
+OPN025, x
+OPN010, x
+OPN030, x
+OPN050, x
+OPN055, x
+OPN060, x
+MEMTCF, x
+LOADSP, x
+LUKING, x
+LODING, x
+SKIPBY, x
+SAVESP, x
+CLSEI2, x
+SAVING, x
+settim, x
+SKIPIT, x
+ERROR1, Jump to error handler with A=1 "TOO MANY FILES"
+ERROR2, Jump to error handler with A=2 "FILE OPEN"
+ERROR3, Jump to error handler with A=3 "FILE NOT OPEN"
+ERROR4, Jump to error handler with A=4 "FILE NOT FOUND"
+ERROR5, Jump to error handler with A=5 "DEVICE NOT PRESENT"
+ERROR6, Jump to error handler with A=6 "NOT INPUT FILE"
+ERROR7, Jump to error handler with A=7 "NOT OUTPUT FILE"
+ERROR8, Jump to error handler with A=8 "MISSING FILE NAME"
+ERROR9, Jump to error handler with A=9 "BAD DEVICE #"
+erexit, x
+CMPSTE, x
+INCSAL, x
+START1, x
+TBLA0R, x
+restor, x
+TBLA0E, x
+VECTOR, x
+MOVOS1, x
+MOVOS2, x
+VECTSS, x
+RAMTAS, x
+VECTSE, x
+RAMTZ0, x
+RAMTBT, x
+RAMTZ1, x
+RAMTZ2, x
+RAMTZ3, x
+RAMTZ4, x
+RAMTZ5, x
+BADRAM, x
+IOINIT, x
+IOKEYS, x
+SETNAM, x
+SETLFS, x
+READSS, x
+setmsg, x
+readst, x
+SETTMO, x
+MEMTOP, x
+GETTOP, x
+SETTOP, x
+MEMBOT, x
+SETBOT, x
+CHKMEM, x
+NNMI10, x
+NNMI18, x
+NNMI19, x
+NNMI20, x
+NMIRTN, x
+NNMI30, x
+NNMI40, x
+NNMI42, x
+NMIRTI, x
+SETMSG, x
+READST, x
+SETTIM, x
+JSCROG, x
+JIOBAS, x
