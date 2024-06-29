@@ -1819,7 +1819,7 @@ TWRT, Checksum
 TWRT2, -2=write tape, leader length in A
 TAPE, Common tape I/O
 TP20, +
-TP30, Interblock delau loop
+TP30, Interblock delay loop
 TP32, +
 TP35, +
 TP40, Test, IRQ not modified
