@@ -97,8 +97,8 @@ IO010, x
 IO020, x
 T2NMI, x
 FLNMI, x
-POPEN, x
-PCINT, x
+POPEN, Patches OPEN RS232 for NTSC/PAL machines (for "universal kernel")
+PCINT, Patches CINT to set NTSC/PAL flag (for "universal kernal")
 P0010, x
 WHITE, White color value (constant)
 NWRAP, Max number of physical lines per logical line (constant)
@@ -345,7 +345,7 @@ CUNLSN, x
 NNMI22, x
 NNMI25, x
 SIMIRQ, x
-PIOKEY, x
+PIOKEY, Patch to IOKEY to set correct INQ rate for NTSC/PAL (for "universal kernal")
 ADRAY1, Vector: routine to convert Floating Point to Signed Integer (not used)
 ADRAY2, Vector: routine to convert Integer to Floating Point (not used)
 NLINES, Numoer of rows on screen (constant)
