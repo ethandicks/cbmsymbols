@@ -20,9 +20,9 @@ GRBRTS, x
 INCRTS, x
 INIT20, x
 INLINN, x
-KBASIN, x
-KBSOUT, x
-KUDTIM, x
+KBASIN, Kernal: Input character from current input device vector
+KBSOUT, Kernal: Output a byte to channel
+KUDTIM, Kernal: Increment realtime clock
 L00, x
 L02, x
 L026A, x

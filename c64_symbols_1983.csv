@@ -1,5 +1,5 @@
 Q, x
-PLF, x
+PLF, Program Load File (fixed load addr) block type (constant)
 PX4, x
 CK5, x
 BMT2, x
@@ -10,8 +10,8 @@ UD90, x
 STT4, x
 size, x
 BLUE, blue color value (constant)
-LLEN, x
-CBIT, x
+LLEN, Length of single line - VIC-20: 22; C64: 40 (constant)
+CBIT, RS-232: T2 cycle adjustment for interrupt processing overhead (constant)
 R2D2, Flag: EOI output byte switch (00=send byte immediately; 80=do EOI delay first)
 USER, Pointer to address of current color RAM location
 XMAX, Maximum keyboard buffer size (0-15)
@@ -62,7 +62,7 @@ TNIQ, x
 INCR, x
 NNMI, x
 TIMB, x
-PLOT, x
+PLOT, Kernal: read/set screen X,Y coordinates
 PABBO, x
 PCTH0, x
 PCTH1, x
@@ -102,15 +102,15 @@ PCINT, x
 P0010, x
 WHITE, White color value (constant)
 NWRAP, Max number of physical lines per logical line (constant)
-ERVFY, x
-ERBRK, x
-LLEN2, x
+ERVFY, "VERIFY ERROR" message number (constant)
+ERBRK, "Break" message number (constant)
+LLEN2, Length of double line - VIC-20: 44; C64: 80 (constant)
 verck, Flag: LOAD or VERIFY
-INBIT, RS-232: Input bits/Cassette temporary storage area
-BITCI, RS-232: Input bit count/Cassette temporary storage
-BITTS, RS-232: Output bit count/Cassette temporary storage
-RIBUF, RS-232: Pointer to input buffer
-ROBUF, RS-232: Pointer to output buffer
+INBIT, RS-232: input bits/Cassette temporary storage area
+BITCI, RS-232: input bit count/Cassette temporary storage
+BITTS, RS-232: output bit count/Cassette temporary storage
+RIBUF, RS-232: pointer to input buffer
+ROBUF, RS-232: pointer to output buffer
 COLOR, Current foreground color for text
 GDCOL, Color of character under cursor
 KOUNT, Counter for timing delay between key repeats
@@ -140,7 +140,7 @@ LINZ6, Address of screen line 7 for lo byte table
 LINZ7, Address of screen line 8 for lo byte table
 LINZ8, Address of screen line 9 for lo byte table
 LINZ9, Address of screen line 10 for lo byte table
-SIXTY, x
+SIXTY, Timer value for 60Hz NTSC (constant)
 D1ORB, 6522 VIA #1 Port B register
 D1T1L, 6522 VIA/6526 CIA #1 Timer 1 Lo
 D1T1H, 6522 VIA/6526 CIA #1 Timer 1 Hi
@@ -161,36 +161,36 @@ D2PCR, 6522 VIA #2 Peripheral Control Register
 D2IFR, 6522 VIA #2 Interrupt Flag Register
 D2IER, 6522 VIA #2 Interrupt Enable Register
 D2ORA, 6522 VIA #2 Port A register
-ERR02, x
-ERR03, x
-ERR04, x
-ERR05, x
-ERR06, x
-ERR07, x
-ERR08, x
-ERR09, x
-ERR10, x
-ERR11, x
-ERR12, x
-ERR13, x
-ERR14, x
-ERR15, x
-ERR16, x
-ERR17, x
-ERR18, x
-ERR19, x
-ERR20, x
-ERR21, x
-ERR22, x
-ERR23, x
-ERR24, x
-ERR25, x
-ERR26, x
-ERR27, x
-ERR28, x
-ERR29, x
-OKMSG, x
-ERR30, x
+ERR02, Error string "FILE OPEN"
+ERR03, Error string "FILE NOT OPEN"
+ERR04, Error string "FILE NOT FOUND"
+ERR05, Error string "DEVICE NOT PRESENT"
+ERR06, Error string "NOT INPUT FILE"
+ERR07, Error string "NOT OUTPUT FILE"
+ERR08, Error string "MISSING FILE NAME"
+ERR09, Error string "ILLEGAL DEVICE ERROR"
+ERR10, Error string "NEXT WITHOUT FOR"
+ERR11, Error string "SYNTAX"
+ERR12, Error string "RETURN WITHOUT GOSUB"
+ERR13, Error string "OUT OF DATA"
+ERR14, Error string "ILLEGAL QUANTITY"
+ERR15, Error string "OVERFLOW"
+ERR16, Error string "OUT OF MEMORY"
+ERR17, Error string "UNDEF'D STATEMENT"
+ERR18, Error string "BAD SUBSCRIPT"
+ERR19, Error string "REDIM'D ARRAY"
+ERR20, Error string "DIVISION BY ZERO"
+ERR21, Error string "ILLEGAL DIRECT"
+ERR22, Error string "TYPE MISMATCH"
+ERR23, Error string "STRING TOO LONG"
+ERR24, Error string "FILE DATA"
+ERR25, Error string "FORMULA TOO COMPLEX"
+ERR26, Error string "CAN'T CONTINUE"
+ERR27, Error string "UNDEF'D FUNCTION"
+ERR28, Error string "VERIFY"
+ERR29, Error string "LOAD"
+OKMSG, CR+"OK"+CR string
+ERR30, Error string "BREAK"+A0
 NMAIN, x
 NGONE, x
 NEVAL, x
@@ -293,23 +293,23 @@ A0IN1, x
 A0IN2, x
 NOMEM, x
 BAUDO, x
-RDTIM, x
-JPLOT, x
-RDBAS, x
+RDTIM, Kernal: read realtime clock
+JPLOT, Kernal: read/set screen X,Y coordinates
+RDBAS, Kernal: return I/O Base address
 DIRCAT, x
 patch2, x
 PATCHG, x
 PATCHH, x
 PATCHI, x
 PTHRTI, x
-BLANK0, x
+BLANK0, 6510 register area
 CASTON, Indicator of CIA #1 Control Register B activity during cassette I/O
 KIKA26, Save area for CIA #1 Interrupt Control Register during cassette read
 STUPID, Save area for CIA #1 Control Register A during cassette read
 PALNTS, PAL/NTSC flag
 LINZ23, Address of screen line 23 for lo byte table
 LINZ24, Address of screen line 24 for lo byte table
-SIXTYP, x
+SIXTYP, Timer value for 60Hz PAL (constant)
 NERROX, x
 READYX, x
 CKSMA0, $A000 8K ROM checksum adj
@@ -349,26 +349,26 @@ PIOKEY, x
 ADRAY1, Vector: routine to convert Floating Point to Signed Integer (not used)
 ADRAY2, Vector: routine to convert Integer to Floating Point (not used)
 NLINES, Numoer of rows on screen (constant)
-ERLOAD, x
+ERLOAD, "LOAD ERROR" message number (constant)
 MAXCHR, x
-STRNGI, x
-STATUS, x
-MSGFLG, Flag: Kernal Message Control
+STRNGI, (Unused duplicate symbol for STRNG1?)
+STATUS, Kernal I/O Status Word (ST)
+MSGFLG, Flag: kernal message control
 BSOUR1, Temp used by serial routine
-RINONE, RS-232 Flag: Check for start bit 
-RIDATA, RS-232: Input byte buffer/Cassette temporary storage
-RIPRTY, RS-232: Input parity/Cassette leader counter
-NXTBIT, x
-RODATA, x
-ROPRTY, RS-232: Output parity/Cassette temporary storage
-MEMUSS, x
-LINTMP, x
-KEYTAB, Vector: Keyboard Decode Table
+RINONE, RS-232 Flag: check for start bit
+RIDATA, RS-232: input byte buffer/Cassette temporary storage
+RIPRTY, RS-232: input parity/Cassette leader counter
+NXTBIT, RS-232: next bit to send
+RODATA, RS-232: output byte buffer
+ROPRTY, RS-232: output parity/Cassette temporary storage
+MEMUSS, User-provided Cassette load starting address (if non-zero)
+LINTMP, Temporary index to the next 40-column line for screen scrolling
+KEYTAB, Vector: keyboard Decode Table
 FREKZP, Four free bytes of Zero Page for user programs
 BASZPT, Floating point to ASCII conversion temporary data
-MEMSTR, x
-memsiz, x
-TIMOUT, Flag: Kernal variable for IEEE time-out
+MEMSTR, System start of memory pointer (C64 default: $0800)
+memsiz, System end of memory pointer (C64 default: $A000)
+TIMOUT, Flag: kernal variable for IEEE time-out
 HIBASE, High byte of pointer to screen memory
 RPTFLG, Flag: which keys repeat (80=all keys; 01=none; 00=cursor/ins/del/space)
 SHFLAG, Flag: SHIFT/CTRL/Logo keypress
@@ -385,16 +385,16 @@ IRQTMP, Save area fr IRQ vector during cassette I/O
 IERROR, Indirect error (output error in .X)
 ICRNCH, Indirect error (system direct loop)
 IQPLOP, Indirect LIST (char list)
-ICLOSE, x
-ICHKIN, x
-ICKOUT, x
-ICLRCH, x
-IBASIN, x
-IBSOUT, x
-IGETIN, x
-ICLALL, x
-TBUFFR, x
-VICSCN, x
+ICLOSE, Vector to Kernal CLOSE routine
+ICHKIN, Vector to Kernal CHKIN routine
+ICKOUT, Vector to Kernal CKOUT routine
+ICLRCH, Vector to Kernal CLRCHN routine
+IBASIN, Vector to Kernal BASIN routine
+IBSOUT, Vector to Kernal BSOUT routine
+IGETIN, Vector to Kernal GETIN routine
+ICLALL, Vector to Kernal CLALL routine
+TBUFFR, Cassette I/O buffer - 192 bytes
+VICSCN, Location of VIC Screen RAM (VIC-20 default: $1000; C64 default: $0400)
 LINZ10, Address of screen line 11 for lo byte table
 LINZ11, Address of screen line 12 for lo byte table
 LINZ12, Address of screen line 13 for lo byte table
@@ -657,8 +657,8 @@ NNMI30, x
 NNMI40, x
 NNMI42, x
 NMIRTI, x
-SETMSG, x
-READST, x
-SETTIM, x
-JSCROG, x
-JIOBAS, x
+SETMSG, Kernal: control Kernal messages
+READST, Kernal: read I/O status byte
+SETTIM, Kernal: set realtime clock
+JSCROG, Kernal: read screen organization
+JIOBAS, Kernal: return I/O Base address
