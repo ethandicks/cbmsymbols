@@ -60,8 +60,8 @@ SV40, x
 TH40, x
 TNIQ, x
 INCR, x
-NNMI, x
-TIMB, x
+NNMI, NMI handler
+TIMB, BRK handler
 PLOT, Kernal: read/set screen X,Y coordinates
 PABBO, x
 PCTH0, x
@@ -594,7 +594,7 @@ OPN030, x
 OPN050, x
 OPN055, x
 OPN060, x
-MEMTCF, x
+MEMTCF, Force set top of memory for RS-232 buffer
 LOADSP, x
 LUKING, x
 LODING, x
@@ -634,19 +634,19 @@ RAMTZ3, x
 RAMTZ4, x
 RAMTZ5, x
 BADRAM, x
-IOINIT, x
-IOKEYS, x
-SETNAM, x
-SETLFS, x
-READSS, x
-setmsg, x
-readst, x
-SETTMO, x
-MEMTOP, x
-GETTOP, x
-SETTOP, x
-MEMBOT, x
-SETBOT, x
+IOINIT, Initialize I/O devices
+IOKEYS, Restore keyboard scanning IRQ for Timer 1
+SETNAM, Set filename for OPEN
+SETLFS, Set logical, first, and second address for OPEN
+READSS, Read I/O status word
+setmsg, Set Kernal message level
+readst, Read serial status byte
+SETTMO, Set serial bus timeout
+MEMTOP, Read or return top of memory (uses carry flag)
+GETTOP, Read top of memory
+SETTOP, Set top of memory
+MEMBOT, Set or return bottom of memory (uses carry flag)
+SETBOT, Set bottom of memory
 CHKMEM, x
 NNMI10, x
 NNMI18, x
