@@ -88,7 +88,7 @@ LFF24, (local symbol)
 LFF45, (local symbol)
 LFF9E, (local symbol)
 LINLIN, x
-LINWID, x
+LINWID, Screen line width
 MRCHKR, Microsoft WAIT6502 Easter Egg outer loop
 MRCHR, Microsoft WAIT6502 Easter Egg inner loop
 NCMWFL, x
@@ -405,7 +405,7 @@ SAT, File secondary address table - 10 bytes
 KEYD, Keyboard input buffer - 10 bytes
 TAPE1, Tape#1 input buffer - 192 bytes
 FNLEN2, DOS character pointer
-POS, x
+POS, POS instruction
 TAPE2, Tape#2 input buffer - 192 bytes
 DRIVE1, DOS drive 1 flag
 DRIVE2, DOS drive 2 flag
@@ -844,7 +844,7 @@ UMLRTS, +
 FRE, FRE instruction
 NOFREF, (Do garbage collection)
 GIVAYF, Converts integer to floating binary
-SNGFLT, +
+SNGFLT, Converts Y to floating binary
 ERRDIR, Is instruction type indirect only?
 ERRGUF, Print "illegal direct"
 DEF, DEF instruction; also evaluates FN
