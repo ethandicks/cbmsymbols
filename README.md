@@ -18,6 +18,16 @@ Symbols are expected to be in upper case, interleaved with the values, as upper 
 
 ```./mkmmap HDR1,file1.txt HDR2,file2.txt [COMMENT,symbols.csv]...```
 
+## Wrapper scripts:
+
+For convenience, wrapper scripts can help filter undesired tags and comments, and combine multiple label files
+
+```
+./petmap.sh # Three versions of PET ROMs
+./c64map.sh # Three versions of Commodore 64 ROMs
+./allmap.sh # Three versions of PET ROMs, VIC-20 ROMs, and Commodore 64 ROMs
+```
+
 ## Detailed example:
 
 Combine the BASIC and KERNAL (and EDIT ROM) listings for three versions of PETs (it is not required to remove the listing lines)
