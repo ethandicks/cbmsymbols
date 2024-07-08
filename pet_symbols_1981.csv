@@ -88,7 +88,7 @@ LFF24, (local symbol)
 LFF45, (local symbol)
 LFF9E, (local symbol)
 LINLIN, x
-LINWID, Screen line width
+LINWID, Screen line width (set in INIT but never used)
 MRCHKR, Microsoft WAIT6502 Easter Egg outer loop
 MRCHR, Microsoft WAIT6502 Easter Egg inner loop
 NCMWFL, x
